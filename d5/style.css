@@ -883,12 +883,13 @@ header {
     align-items: center;
     gap: 6px;
 }
-.course-card {
+.course-item {
     display:flex;
     flex-direction:column;
     background:#fff;
     border-radius:16px;
     overflow:hidden;
+    min-height: 40px;
 }
 
 .course-card:hover {
@@ -911,28 +912,33 @@ header {
 }
 
 .course-content {
+    display: flex;
+    flex-direction: column;
     padding: 18px 20px 20px;
     flex: 1;
     min-width: 0;
 }
 
 .course-title {
-    margin-bottom:10px;
+    margin: 0 15px;
+    width: auto;
+    min-height: 42px;
 }
 
 .course-title a {
-    font-size:16px;
-    color:#292929;
-    text-decoration:none;
-    font-weight:700;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    color: #292929;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 21px;
+    word-break: normal;
 }
 
 .course-title a:hover {
-    color:#f05123;
+    color: #f05123;
 }
-
-
-
 
 .old-price {
     color:#999;
@@ -942,8 +948,8 @@ header {
 
 .new-price {
     color:#f05123;
-    font-size:18px;
-    font-weight:700;
+    font-size:16px;
+    font-weight:600;
 }
 
 .free {
@@ -972,47 +978,39 @@ header {
     display: flex;
     align-items: center;
     gap: 8px;
-
+    margin-top: auto;
     color: #666;
     font-size: 14px;
     text-decoration: none;
 }
 
-/* Avatar */
 .post-avatar {
     width: 28px;
     height: 28px;
-
     flex-shrink: 0;
-
     overflow: hidden;
     border-radius: 50%;
 }
 
 .post-avatar img {
     display: block;
-
     width: 100%;
     height: 100%;
-
     object-fit: cover;
 }
 
-/* Tên */
 .post-user-name {
     color: #333;
     font-weight: 600;
     white-space: nowrap;
 }
 
-/* Dấu chấm */
 .post-dot {
     color: #999;
     font-size: 16px;
     line-height: 1;
 }
 
-/* Thời gian */
 .post-author > span:last-child {
     color: #777;
     white-space: nowrap;
@@ -1021,6 +1019,8 @@ header {
     display: flex;
     align-items: center;
     width: 100%;
+    min-height: 40px;
+    margin-top: auto;
 }
 
 .teacher {
@@ -1179,10 +1179,13 @@ header {
 /* Nội dung */
 .video-content {
     padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    min-height: 80px;
 }
 
 .video-title {
-    margin: 0 0 12px;
+    margin: 0 ;
 }
 
 .video-title a {
@@ -1191,14 +1194,15 @@ header {
 
     font-size: 16px;
     font-weight: 600;
+    line-height: 22px;
 }
 
-/* Thống kê */
+
 .video-stats {
     display: flex;
     align-items: center;
     gap: 16px;
-
+    margin-top: auto;
     color: #666;
     font-size: 13px;
 }
@@ -1218,4 +1222,24 @@ header {
 
 .header-search input::placeholder {
     color: #797979;
+}
+.post-user-name {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.post-user-name i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 16px;
+    height: 16px;
+
+    background-color: #2C67C5;
+    color: white;
+    border-radius: 50%;
+
+    font-size: 9px;
 }
