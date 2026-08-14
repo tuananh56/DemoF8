@@ -1,0 +1,2315 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://files.fullstack.edu.vn/f8-prod/organization-logos/694743c405102.png"
+    />
+    <title>F8-HỌC LẬP TRÌNH ĐỂ ĐI LÀM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-brand">
+        <a href="/" class="header-logo">
+          <img
+            src="https://files.fullstack.edu.vn/f8-prod/organization-logos/694743c405102.png"
+            alt="F8"
+          />
+        </a>
+        <h1 class="header-slogan">
+          <a href="#">HỌC LẬP TRÌNH ĐỂ ĐI LÀM</a>
+        </h1>
+      </div>
+      <div class="header-discovery">
+        <button class="header-category">
+          <i class="fa-solid fa-table-cells-large"></i>
+          <span>Danh mục</span>
+        </button>
+
+        <div class="header-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input class="text" type="text" placeholder="Tìm khóa học, bài tập, hỏi đáp..." />
+        </div>
+      </div>
+      <div class="header-action">
+        <button type="button" class="header-content">
+          <span class="header-content-inner">
+            <span class="header-content-title"> Khóa học của tôi </span>
+          </span>
+        </button>
+        <button class="header-notification">
+          <i class="fa-duotone fa-solid fa-bell"></i>
+        </button>
+        <button class="header-avatar">
+          <img
+            src="https://files.f8.edu.vn/f8-prod/avatars/6a6d8718342fd.jpg"
+            alt="ho tuananh"
+          />
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="sidebar">
+        <ul class="sidebar-list">
+          <li>
+            <a href="/" class="sidebar-item active">
+              <i class="fa-solid fa-house"></i>
+              <span>Trang chủ</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/roadmap" class="sidebar-item">
+              <i class="fa-solid fa-road"></i>
+              <span>Lộ trình</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/blog" class="sidebar-item">
+              <i class="fa-solid fa-newspaper"></i>
+              <span>Bài viết</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/new-feeds" class="sidebar-item">
+              <i class="fa-solid fa-bullhorn"></i>
+              <span>Bản tin</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/discussions" class="sidebar-item">
+              <i class="fa-solid fa-comments"></i>
+              <span>Hỏi đáp</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/assignment-classes" class="sidebar-item">
+              <i class="fa-solid fa-clipboard-list"></i>
+              <span>Bài tập</span>
+              <span class="badge">2</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="story-rail">
+          <section class="story-section">
+            <h2 class="story-heading">Tin</h2>
+            <div class="story-outer">
+              <div class="story-list">
+                <button class="story-item">
+                  <div class="story-image create-story">
+                    <img
+                      src="https://files.f8.edu.vn/f8-prod/avatars/6a6d8718342fd.jpg"
+                      alt="Avatar"
+                    />
+
+                    <div class="story-plus">
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                  <span class="story-name">Tạo tin</span>
+                </button>
+                <button class="story-item">
+                  <div class="story-image">
+                    <img
+                      src="https://files.f8.edu.vn/f8-prod/streamable-videos/2660/0/6a71c3863062d.jpg"
+                      alt=""
+                    />
+
+                    <div class="story-avatar">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/avatars/6a45c8c490545.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <span class="story-name">
+                    Nga Trần...
+                    <i class="fa-solid fa-circle-check"></i>
+                  </span>
+                </button>
+                <button class="story-item">
+                  <div class="story-image">
+                    <img
+                      src="https://files.f8.edu.vn/f8-prod/streamable-videos/2655/0/6a6c789a08450.jpg"
+                      alt=""
+                    />
+                    <div class="story-avatar">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/avatars/69fef6725960f.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <span class="story-name">
+                    Mỹ Anh Đỗ
+                    <i class="fa-solid fa-circle-check"></i>
+                  </span>
+                </button>
+                <button class="story-item">
+                  <div class="story-image">
+                    <img
+                      src="https://files.f8.edu.vn/f8-prod/streamable-videos/2307/0/69e8719e27388.jpg"
+                      alt=""
+                    />
+
+                    <div class="story-avatar">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/avatars/69e86df884a44.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <span class="story-name">
+                    Tây Du Code
+                    <i class="fa-solid fa-circle-check"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="banner">
+          <a href="https://fullstack.edu.vn/landing/fullstack" target="_blank">
+            <img
+              src="https://files.f8.edu.vn/f8-prod/banners/36/6a6001d75ff0a.png"
+              alt="F8 - Học lập trình web FullStack"
+            />
+          </a>
+        </div>
+        <div class="home-course">
+          <div class="title-recommend-course">
+            <h2 class="title1">Dành cho bạn</h2>
+          </div>
+          <div class="recommend-course">
+            <div class="course-list">
+              <div class="course-item">
+                <a href="#" class="course-image">
+                  <img
+                    src="https://files.f8.edu.vn/f8-prod/courses/88/6a75972163ec6.png"
+                    alt="Laravel framework"
+                  />
+                  <span class="course-pro">
+                    <i class="fa-solid fa-crown"></i>
+                  </span>
+                  />
+                </a>
+
+                <div class="course-content">
+                  <h3>
+                    <a href="#">Laravel framework</a>
+                  </h3>
+
+                  <div class="course-price">Liên hệ</div>
+
+                  <div class="course-badge">Mới ra mắt</div>
+
+                  <div class="teacher">
+                    <img
+                      src="https://files.f8.edu.vn/f8-prod/user_avatars/328741/647d8b5c022d3.png"
+                      alt="Hoàng An"
+                    />
+                    <span>Hoàng An</span>
+                  </div>
+                </div>
+              </div>
+              <div class="course-item">
+                <a href="#" class="course-image">
+                  <img
+                    src="https://files.f8.edu.vn/f8-prod/courses/89/6a7597aedcc21.png"
+                    alt="NestJS framework"
+                  />
+                  <span class="course-pro">
+                    <i class="fa-solid fa-crown"></i>
+                  </span>
+                </a>
+
+                <div class="course-content">
+                  <h3>
+                    <a href="#">NestJS framework</a>
+                  </h3>
+
+                  <div class="course-price">Liên hệ</div>
+
+                  <div class="course-badge">Mới ra mắt</div>
+
+                  <div class="teacher">
+                    <img
+                      src="https://files.f8.edu.vn/f8-prod/user_avatars/328741/647d8b5c022d3.png"
+                      alt="Hoàng An"
+                    />
+
+                    <span>Hoàng An</span>
+                  </div>
+                </div>
+              </div>
+              <div class="course-item">
+                <a href="#" class="course-image">
+                  <img
+                    src="https://files.f8.edu.vn/f8-prod/courses/90/6a7597db76c50.png"
+                    alt="Vue & Nuxt"
+                  />
+                  <span class="course-pro">
+                    <i class="fa-solid fa-crown"></i>
+                  </span>
+                </a>
+
+                <div class="course-content">
+                  <h3>
+                    <a href="#">Vue & Nuxt</a>
+                  </h3>
+
+                  <div class="course-price">Liên hệ</div>
+
+                  <div class="course-badge">Mới ra mắt</div>
+
+                  <div class="teacher">
+                    <img
+                      src="https://files.f8.edu.vn/f8-prod/user_avatars/328741/647d8b5c022d3.png"
+                      alt="Hoàng An"
+                    />
+                    <span>Hoàng An</span>
+                  </div>
+                </div>
+              </div>
+              <div class="course-item">
+                <a href="#" class="course-image">
+                  <img
+                    src="https://files.f8.edu.vn/f8-prod/courses/91/6a7597e78d583.png"
+                    alt="React Native"
+                  />
+                  <span class="course-pro">
+                    <i class="fa-solid fa-crown"></i>
+                  </span>
+                </a>
+
+                <div class="course-content">
+                  <h3>
+                    <a href="#">React Native</a>
+                  </h3>
+
+                  <div class="course-price">Liên hệ</div>
+
+                  <div class="course-badge">Mới ra mắt</div>
+
+                  <div class="teacher">
+                    <img
+                      src="https://files.f8.edu.vn/f8-prod/user_avatars/328741/647d8b5c022d3.png"
+                      alt="Hoàng An"
+                    />
+
+                    <span>Hoàng An</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="course-more">
+              <button>Xem thêm 8 khóa học</button>
+            </div>
+            <div class="students-joined">
+              <div class="students-avatars">
+                <div class="student-avatar">
+                  <img
+                    src="https://files.f8.edu.vn/f8-prod/avatars/6a7c7d93cbe80.jpg"
+                    alt="vulong24"
+                  />
+                </div>
+
+                <div class="student-avatar">
+                  <img
+                    src="https://files.f8.edu.vn/f8-prod/avatars/6a794281d2438.jpg"
+                    alt="quocviet56"
+                  />
+                </div>
+
+                <div class="student-avatar">
+                  <img
+                    src="https://files.f8.edu.vn/f8-prod/avatars/6a789ddb40c41.jpg"
+                    alt="nguyenhung311"
+                  />
+                </div>
+              </div>
+              <div class="students-text">
+                <strong>+470.441</strong> học viên đã tham gia
+              </div>
+            </div>
+          </div>
+          <div class="title-course">
+            <h2 class="title1">Khóa học qua Zoom</h2>
+            <span class="new">Mới</span>
+          </div>
+          <div class="course-list">
+            <div class="course-item">
+              <a href="#" class="course-image">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/90/6a7597db76c50.png"
+                  alt="Vue & Nuxt"
+                />
+                <span class="course-pro">
+                  <i class="fa-solid fa-crown"></i>
+                </span>
+              </a>
+
+              <div class="course-content">
+                <h3>
+                  <a href="#">Vue & Nuxt</a>
+                </h3>
+
+                <div class="course-price">Liên hệ</div>
+
+                <div class="course-badge">Mới ra mắt</div>
+
+                <div class="teacher">
+                  <img
+                    src="https://files.f8.edu.vn/f8-prod/user_avatars/328741/647d8b5c022d3.png"
+                    alt="Hoàng An"
+                  />
+                  <span>Hoàng An</span>
+                </div>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-image">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/31/67f4c93c28d4b.png"
+                  alt="Fullstack Web"
+                />
+                <span class="course-pro">
+                  <i class="fa-solid fa-crown"></i>
+                </span>
+              </a>
+
+              <div class="course-content">
+                <h3>
+                  <a href="#">Fullstack Web</a>
+                </h3>
+
+                <div class="course-price">Liên hệ</div>
+
+                <div class="course-badge">Mới ra mắt</div>
+
+                <div class="teacher">
+                  <div class="course-info">
+                    <div class="teacher">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/avatars/699286a5e7330.png"
+                        alt=""
+                      />
+                      <span>Sơn Đặng</span>
+
+                      <div class="course-students">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <span>499</span>
+                      </div>
+
+                      <div class="course-duration">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>398 giờ 15 phút</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-image">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/91/6a7597e78d583.png"
+                  alt="Laravel framework"
+                />
+                <span class="course-pro">
+                  <i class="fa-solid fa-crown"></i>
+                </span>
+              </a>
+
+              <div class="course-content">
+                <h3>
+                  <a href="#">Laravel framework</a>
+                </h3>
+
+                <div class="course-price">Liên hệ</div>
+
+                <div class="course-badge">Mới ra mắt</div>
+
+                <div class="teacher">
+                  <img
+                    src="https://files.f8.edu.vn/f8-prod/user_avatars/328741/647d8b5c022d3.png"
+                    alt="Hoàng An"
+                  />
+
+                  <span>Hoàng An</span>
+                </div>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-image">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/94/6a759815041e3.png"
+                  alt="DevOps cơ bản"
+                />
+                <span class="course-pro">
+                  <i class="fa-solid fa-crown"></i>
+                </span>
+              </a>
+
+              <div class="course-content">
+                <h3>
+                  <a href="#">DevOps cơ bản</a>
+                </h3>
+
+                <div class="course-price">Liên hệ</div>
+
+                <div class="course-badge">Mới ra mắt</div>
+
+                <div class="teacher">
+                  <img
+                    src="https://files.f8.edu.vn/f8-prod/public-images/66dc0fbded8d8.png"
+                    alt="Trần Xuân"
+                  />
+
+                  <span>Trần Xuân</span>
+                </div>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-image">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/95/6a7598210ba51.png"
+                  alt="DevOps Nâng Cao"
+                />
+                <span class="course-pro">
+                  <i class="fa-solid fa-crown"></i>
+                </span>
+              </a>
+
+              <div class="course-content">
+                <h3>
+                  <a href="#">DevOps Nâng Cao</a>
+                </h3>
+
+                <div class="course-price">Liên hệ</div>
+
+                <div class="course-badge">Mới ra mắt</div>
+
+                <div class="teacher">
+                  <img
+                    src="https://files.f8.edu.vn/f8-prod/user_avatars/328741/647d8b5c022d3.png"
+                    alt="Hoàng An"
+                  />
+
+                  <span>Hoàng An</span>
+                </div>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-image">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/89/6a7597aedcc21.png"
+                  alt="NestJS framework"
+                />
+                <span class="course-pro">
+                  <i class="fa-solid fa-crown"></i>
+                </span>
+              </a>
+
+              <div class="course-content">
+                <h3>
+                  <a href="#">NestJS framework</a>
+                </h3>
+
+                <div class="course-price">Liên hệ</div>
+
+                <div class="course-badge">Mới ra mắt</div>
+
+                <div class="teacher">
+                  <img
+                    src="https://files.f8.edu.vn/f8-prod/user_avatars/328741/647d8b5c022d3.png"
+                    alt="Hoàng An"
+                  />
+
+                  <span>Hoàng An</span>
+                </div>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-image">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/88/6a75972163ec6.png"
+                  alt="React Native"
+                />
+                <span class="course-pro">
+                  <i class="fa-solid fa-crown"></i>
+                </span>
+              </a>
+
+              <div class="course-content">
+                <h3>
+                  <a href="#">React Native</a>
+                </h3>
+
+                <div class="course-price">Liên hệ</div>
+
+                <div class="course-badge">Mới ra mắt</div>
+
+                <div class="teacher">
+                  <img
+                    src="https://files.f8.edu.vn/f8-prod/user_avatars/328741/647d8b5c022d3.png"
+                    alt="Hoàng An"
+                  />
+
+                  <span>Hoàng An</span>
+                </div>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-image">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/92/6a7597f3967d7.png"
+                  alt="MySQL chuyên sâu"
+                />
+                <span class="course-pro">
+                  <i class="fa-solid fa-crown"></i>
+                </span>
+                />
+              </a>
+
+              <div class="course-content">
+                <h3>
+                  <a href="#">MySQL chuyên sâu</a>
+                </h3>
+
+                <div class="course-price">Liên hệ</div>
+
+                <div class="course-badge">Mới ra mắt</div>
+
+                <div class="teacher">
+                  <img
+                    src="https://files.f8.edu.vn/f8-prod/user_avatars/328741/647d8b5c022d3.png"
+                    alt="Hoàng An"
+                  />
+                  <span>Hoàng An</span>
+                </div>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-image">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/93/6a75980921c55.png"
+                  alt="PostgreSQL"
+                />
+                <span class="course-pro">
+                  <i class="fa-solid fa-crown"></i>
+                </span>
+              </a>
+
+              <div class="course-content">
+                <h3>
+                  <a href="#">PostgreSQL chuyên sâu</a>
+                </h3>
+
+                <div class="course-price">Liên hệ</div>
+
+                <div class="course-badge">Mới ra mắt</div>
+
+                <div class="teacher">
+                  <img
+                    src="https://files.f8.edu.vn/f8-prod/user_avatars/328741/647d8b5c022d3.png"
+                    alt="Hoàng An"
+                  />
+
+                  <span>Hoàng An</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="title-course">
+            <h2 class="title1">Khóa học Pro</h2>
+            <span class="new">Mới</span>
+          </div>
+          <div class="course-list">
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/15/62f13d2424a47.png"
+                  alt="HMTL, CSS Pro"
+                />
+                <span class="course-pro">
+                  <i class="fa-solid fa-crown"></i>
+                </span>
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#">HMTL CSS Pro</a>
+                </h3>
+
+                <div class="course-price">
+                  <span class="old-price">2.500.000đ</span>
+                  <span class="new-price">1.299.000đ</span>
+                </div>
+
+                <div class="course-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span>4.9 (417)</span>
+                </div>
+
+                <footer class="course-footer">
+                  <div class="teacher">
+                    <img
+                      src="https://files.f8.edu.vn/f8-prod/avatars/699286a5e7330.png"
+                      alt="Sơn Đặng"
+                    />
+                    <span>Sơn Đặng</span>
+                    <span>
+                      <i class="fa-solid fa-circle-play"></i>
+                      590
+                    </span>
+
+                    <span>
+                      <i class="fa-solid fa-clock"></i>
+                      116 giờ 50 phút
+                    </span>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/27/64e184ee5d7a2.png"
+                  alt="Ngôn ngữ Sass"
+                />
+                <span class="course-pro">
+                  <i class="fa-solid fa-crown"></i>
+                </span>
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#">Ngôn ngữ Sass</a>
+                </h3>
+
+                <div class="course-price">
+                  <span class="old-price">400.000đ</span>
+                  <span class="new-price">299.000đ</span>
+                </div>
+
+                <div class="course-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <span>4.5 (102)</span>
+                </div>
+
+                <footer class="course-footer">
+                  <div class="teacher">
+                    <img
+                      src="https://files.f8.edu.vn/f8-prod/avatars/699286a5e7330.png"
+                      alt="Sơn Đặng"
+                    />
+                    <span>Sơn Đặng</span>
+                    <span>
+                      <i class="fa-solid fa-circle-play"></i>
+                      27
+                    </span>
+
+                    <span>
+                      <i class="fa-solid fa-clock"></i>
+                      6 giờ 18 phút
+                    </span>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/19/66aa28194b52b.png "
+                  alt="JavaScript Pro"
+                />
+                <span class="course-pro">
+                  <i class="fa-solid fa-crown"></i>
+                </span>
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#">JavaScript Pro</a>
+                </h3>
+
+                <div class="course-price">
+                  <span class="old-price">3.299.000đ</span>
+                  <span class="new-price">1.399.000đ</span>
+                </div>
+
+                <div class="course-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span>4.8 (612)</span>
+                </div>
+
+                <footer class="course-footer">
+                  <div class="teacher">
+                    <img
+                      src="https://files.f8.edu.vn/f8-prod/avatars/699286a5e7330.png"
+                      alt="Sơn Đặng"
+                    />
+                    <span>Sơn Đặng</span>
+                    <span>
+                      <i class="fa-solid fa-circle-play"></i>
+                      302
+                    </span>
+
+                    <span>
+                      <i class="fa-solid fa-clock"></i>
+                      56 giờ 52 phút
+                    </span>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-image">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/31/67f4c93c28d4b.png"
+                  alt="Fullstack Web"
+                />
+                <span class="course-pro">
+                  <i class="fa-solid fa-crown"></i>
+                </span>
+              </a>
+
+              <div class="course-content">
+                <h3>
+                  <a href="#">Fullstack Web</a>
+                </h3>
+
+                <div class="course-price">Liên hệ</div>
+
+                <div class="course-badge">Mới ra mắt</div>
+
+                <div class="teacher">
+                  <div class="course-info">
+                    <div class="teacher">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/avatars/699286a5e7330.png"
+                        alt=""
+                      />
+                      <span>Sơn Đặng</span>
+
+                      <div class="course-students">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <span>499</span>
+                      </div>
+
+                      <div class="course-duration">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>398 giờ 15 phút</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/2.png"
+                  alt="HMTL, CSS Pro"
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#">HTML CSS từ Zero đến Hero</a>
+                </h3>
+
+                <div class="course-price">
+                  <span class="new-price">Miễn phí</span>
+                </div>
+
+                <div class="course-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span>4.9 (591)</span>
+                </div>
+
+                <footer class="course-footer">
+                  <i class="fa-solid fa-users"></i>
+                  <span>220.502</span>
+
+                  <div class="course-meta">
+                    <span>
+                      <i class="fa-solid fa-circle-play"></i>
+                      117
+                    </span>
+
+                    <span>
+                      <i class="fa-solid fa-clock"></i>
+                      29 giờ 5 phút
+                    </span>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/1/6a6f0713abcb0.png"
+                  alt="Lập Trình JavaScript Cơ Bản"
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#">Lập Trình JavaScript Cơ Bản</a>
+                </h3>
+
+                <div class="course-price">
+                  <span class="new-price">Miễn phí</span>
+                </div>
+
+                <div class="course-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span>4.9 (700)</span>
+                </div>
+
+                <footer class="course-footer">
+                  <div class="teacher">
+                    <div class="teacher">
+                      <i class="fa-solid fa-users"></i>
+                      <span>155.813</span>
+
+                      <div class="course-students">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <span> 112</span>
+                      </div>
+
+                      <div class="course-duration">
+                        <i class="fa-solid fa-clock"></i>
+                        <span> 24 giờ 15 phút</span>
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/7.png"
+                  alt="Kiến Thức Nhập Môn IT"
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#">Kiến Thức Nhập Môn IT</a>
+                </h3>
+
+                <div class="course-price">
+                  <span class="new-price">Miễn phí</span>
+                </div>
+
+                <div class="course-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span>4.9 (530)</span>
+                </div>
+
+                <footer class="course-footer">
+                  <div class="teacher">
+                    <i class="fa-solid fa-users"></i>
+                    <span>140.302</span>
+
+                    <div class="course-students">
+                      <i class="fa-solid fa-circle-play"></i>
+                      <span> 9</span>
+                    </div>
+
+                    <div class="course-duration">
+                      <i class="fa-solid fa-clock"></i>
+                      <span> 3 giờ 2 phút</span>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/13/13.png"
+                  alt="Xây Dựng Website với ReactJS"
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#">Xây Dựng Website với ReactJS</a>
+                </h3>
+
+                <div class="course-price">
+                  <span class="new-price">Miễn phí</span>
+                </div>
+
+                <div class="course-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span>4.9 (417)</span>
+                </div>
+
+                <footer class="course-footer">
+                  <div class="teacher">
+                    <i class="fa-solid fa-users"></i>
+                    <span>81.379</span>
+
+                    <div class="course-students">
+                      <i class="fa-solid fa-circle-play"></i>
+                      <span> 112</span>
+                    </div>
+
+                    <div class="course-duration">
+                      <i class="fa-solid fa-clock"></i>
+                      <span> 27 giờ 32 phút</span>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+          </div>
+          <div class="title-course">
+            <h2 class="title1">Khóa học Free</h2>
+            <span class="new">HOT</span>
+          </div>
+          <div class="course-list">
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/2.png"
+                  alt="HTML CSS từ Zero đến Hero"
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#">HTML CSS từ Zero đến Hero</a>
+                </h3>
+
+                <div class="course-price">
+                  <span class="new-price">Miễn phí</span>
+                </div>
+
+                <div class="course-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span>4.9 (519)</span>
+                </div>
+
+                <footer class="course-footer">
+                  <div class="teacher">
+                    <i class="fa-solid fa-users"></i>
+                    <span>220.502</span>
+
+                    <div class="course-students">
+                      <i class="fa-solid fa-circle-play"></i>
+                      <span>117</span>
+                    </div>
+
+                    <div class="course-duration">
+                      <i class="fa-solid fa-clock"></i>
+                      <span>29 giờ 5 phút</span>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/78/6a13907bcf8a1.png"
+                  alt="Taiwind CSS"
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#">Taiwind CSS</a>
+                </h3>
+
+                <div class="course-price">
+                  <span class="new-price">MIễn phí</span>
+                </div>
+
+                <div class="course-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <span>4.5 (102)</span>
+                </div>
+
+                <footer class="course-footer">
+                  <div class="teacher">
+                    <i class="fa-solid fa-users"></i>
+                    <span>447</span>
+
+                    <div class="course-students">
+                      <i class="fa-solid fa-circle-play"></i>
+                      <span>20</span>
+                    </div>
+
+                    <div class="course-duration">
+                      <i class="fa-solid fa-clock"></i>
+                      <span>5 giờ 19 phút</span>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/3.png "
+                  alt="JavaScript Pro"
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#">Responsive Với Grid System</a>
+                </h3>
+
+                <div class="course-price">
+                  <span class="new-price">Miễn phí</span>
+                </div>
+
+                <div class="course-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span>4.9 (548)</span>
+                </div>
+
+                <footer class="course-footer">
+                  <div class="teacher">
+                    <i class="fa-solid fa-users"></i>
+                    <span>48.701</span>
+
+                    <div class="course-students">
+                      <i class="fa-solid fa-circle-play"></i>
+                      <span>34</span>
+                    </div>
+
+                    <div class="course-duration">
+                      <i class="fa-solid fa-clock"></i>
+                      <span>6 giờ 31 phút</span>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/1/6a6f0713abcb0.png"
+                  alt="Lập Trình JavaScript Cơ Bản"
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#">Lập Trình JavaScript Cơ Bản</a>
+                </h3>
+
+                <div class="course-price">
+                  <span class="new-price">Miễn phí</span>
+                </div>
+
+                <div class="course-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                  <span>4.9 (700)</span>
+                </div>
+
+                <footer class="course-footer">
+                  <div class="teacher">
+                    <i class="fa-solid fa-users"></i>
+                    <span>155.813</span>
+
+                    <div class="course-students">
+                      <i class="fa-solid fa-circle-play"></i>
+                      <span>112</span>
+                    </div>
+
+                    <div class="course-duration">
+                      <i class="fa-solid fa-clock"></i>
+                      <span> 24 giờ 15 phút</span>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/12.png"
+                  alt="Lập Trình JavaScript Nâng Cao"
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#">Lập Trình JavaScript Nâng Cao</a>
+                </h3>
+
+                <div class="course-price">
+                  <span class="new-price">Miễn phí</span>
+                </div>
+
+                <div class="course-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span>4.9 (225)</span>
+                </div>
+
+                <footer class="course-footer">
+                  <div class="teacher">
+                    <i class="fa-solid fa-users"></i>
+                    <span>42.751</span>
+
+                    <div class="course-students">
+                      <i class="fa-solid fa-circle-play"></i>
+                      <span>19</span>
+                    </div>
+
+                    <div class="course-duration">
+                      <i class="fa-solid fa-clock"></i>
+                      <span>8 giờ 41 phút</span>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/13/13.png"
+                  alt="Xây Dựng Website với ReactJS"
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#">Xây Dựng Website với ReactJS</a>
+                </h3>
+
+                <div class="course-price">
+                  <span class="new-price">Miễn phí</span>
+                </div>
+
+                <div class="course-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span>4.8 (374)</span>
+                </div>
+
+                <footer class="course-footer">
+                  <div class="teacher">
+                    <i class="fa-solid fa-users"></i>
+                    <span>81.379</span>
+
+                    <div class="course-students">
+                      <i class="fa-solid fa-circle-play"></i>
+                      <span>112</span>
+                    </div>
+
+                    <div class="course-duration">
+                      <i class="fa-solid fa-clock"></i>
+                      <span> 27 giờ 32 phút</span>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/6.png"
+                  alt="Node & ExpressJS"
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#">Node & ExpressJS</a>
+                </h3>
+
+                <div class="course-price">
+                  <span class="new-price">Miễn phí</span>
+                </div>
+
+                <div class="course-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span>4.6 (681)</span>
+                </div>
+
+                <footer class="course-footer">
+                  <div class="teacher">
+                    <i class="fa-solid fa-users"></i>
+                    <span>50.784</span>
+
+                    <div class="course-students">
+                      <i class="fa-solid fa-circle-play"></i>
+                      <span>112</span>
+                    </div>
+
+                    <div class="course-duration">
+                      <i class="fa-solid fa-clock"></i>
+                      <span>12 giờ 8 phút</span>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/28/6a420c5dbbe67.png"
+                  alt="Devops for Engineers"
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#">Devops for Engineers</a>
+                </h3>
+
+                <div class="course-price">
+                  <span class="new-price">Miễn phí</span>
+                </div>
+
+                <div class="course-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span>4.8 (8)</span>
+                </div>
+
+                <footer class="course-footer">
+                  <div class="teacher">
+                    <i class="fa-solid fa-users"></i>
+                    <span>457</span>
+
+                    <div class="course-students">
+                      <i class="fa-solid fa-circle-play"></i>
+                      <span>24</span>
+                    </div>
+
+                    <div class="course-duration">
+                      <i class="fa-solid fa-clock"></i>
+                      <span> 2 giờ 41 phút</span>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+          </div>
+          <div class="title-course">
+            <h2 class="title1">Khóa học Khác</h2>
+          </div>
+          <div class="course-list">
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/21/63e1bcbaed1dd.png"
+                  alt="Lập trình C++ cơ bản, nâng cao"
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#">Lập trình C++ cơ bản, nâng cao</a>
+                </h3>
+
+                <div class="course-price">
+                  <span class="new-price">Miễn phí</span>
+                </div>
+
+                <div class="course-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                  <span>4.6 (200)</span>
+                </div>
+
+                <footer class="course-footer">
+                  <div class="teacher">
+                    <i class="fa-solid fa-users"></i>
+                    <span>40.339</span>
+
+                    <div class="course-students">
+                      <i class="fa-solid fa-circle-play"></i>
+                      <span>55</span>
+                    </div>
+
+                    <div class="course-duration">
+                      <i class="fa-solid fa-clock"></i>
+                      <span> 10 giờ 18 phút</span>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/14/624faac11d109.png"
+                  alt="Làm việc với Terminal & Ubuntu"
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#">Làm việc với Terminal & Ubuntu</a>
+                </h3>
+
+                <div class="course-price">
+                  <span class="new-price">MIễn phí</span>
+                </div>
+
+                <div class="course-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <span>4.9 (554)</span>
+                </div>
+
+                <footer class="course-footer">
+                  <div class="teacher">
+                    <i class="fa-solid fa-users"></i>
+                    <span>22.220</span>
+
+                    <div class="course-students">
+                      <i class="fa-solid fa-circle-play"></i>
+                      <span>28</span>
+                    </div>
+
+                    <div class="course-duration">
+                      <i class="fa-solid fa-clock"></i>
+                      <span>4 giờ 59 phút</span>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/7.png "
+                  alt="Kiến Thức Nhập Môn IT"
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#">Kiến Thức Nhập Môn IT</a>
+                </h3>
+
+                <div class="course-price">
+                  <span class="new-price">Miễn phí</span>
+                </div>
+
+                <div class="course-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span>4.9 (530)</span>
+                </div>
+
+                <footer class="course-footer">
+                  <div class="teacher">
+                    <i class="fa-solid fa-users"></i>
+                    <span>140.304</span>
+
+                    <div class="course-students">
+                      <i class="fa-solid fa-circle-play"></i>
+                      <span>9</span>
+                    </div>
+
+                    <div class="course-duration">
+                      <i class="fa-solid fa-clock"></i>
+                      <span> 3 giờ 12 phút</span>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/courses/4/61a9e9e701506.png"
+                  alt='App "Đừng Chạm Tay Lên Mặt"'
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#">App "Đừng Chạm Tay Lên Mặt"</a>
+                </h3>
+
+                <div class="course-price">
+                  <span class="new-price">Miễn phí</span>
+                </div>
+
+                <div class="course-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                  <span>4.8 (245)</span>
+                </div>
+
+                <footer class="course-footer">
+                  <div class="teacher">
+                    <i class="fa-solid fa-users"></i>
+                    <span>11.504</span>
+
+                    <div class="course-students">
+                      <i class="fa-solid fa-circle-play"></i>
+                      <span>13</span>
+                    </div>
+
+                    <div class="course-duration">
+                      <i class="fa-solid fa-clock"></i>
+                      <span> 1 giờ 34 phút</span>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+          </div>
+          <div class="title-course">
+            <h2 class="title1">Bài viết nổi bật</h2>
+            <button class="btn-all">
+              Xem tất cả
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="course-list">
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/blog_posts/5582/6389be2c2c3b8.png"
+                  alt="Ôn lại kiến thức Javascript phần 1"
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#">Ôn lại kiến thức Javascript phần 1</a>
+                </h3>
+                <footer class="course-footer">
+                  <a href="#" class="post-author">
+                    <div class="post-avatar">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/user_avatars/18159/6466353972973.jpg"
+                        alt="Vo Minh Kha"
+                      />
+                    </div>
+
+                    <span class="post-user-name">Minh Kha</span>
+
+                    <span class="post-dot">·</span>
+
+                    <span>3 phút đọc</span>
+                  </a>
+                </footer>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/blog_posts/14287/thumb_260728080409_6a680009405a80.08906794.png"
+                  alt="JS ES2025+: Bye lodash, chào native methods"
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#">JS ES2025+: Bye lodash, chào native methods</a>
+                </h3>
+                <footer class="course-footer">
+                  <a href="#" class="post-author">
+                    <div class="post-avatar">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/public-images/699181d60839d.png"
+                        alt="Ếch Trendy"
+                      />
+                    </div>
+
+                    <span class="post-user-name"
+                      >Ếch Trendy<i class="fa-solid fa-check"></i
+                    ></span>
+
+                    <span class="post-dot">·</span>
+
+                    <span>1 phút đọc</span>
+                  </a>
+                </footer>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/blog_posts/14079/thumb_260702080401_6a45b901ce1669.39711158.png"
+                  alt="JavaScript ES2025: Tính năng nào đáng dùng ngay?"
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#"
+                    >JavaScript ES2025: Tính năng nào đáng dùng ngay?</a
+                  >
+                </h3>
+                <footer class="course-footer">
+                  <a href="#" class="post-author">
+                    <div class="post-avatar">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/public-images/699181d60839d.png"
+                        alt="Ếch Trendy"
+                      />
+                    </div>
+
+                    <span class="post-user-name"
+                      >Ếch Trendy<i class="fa-solid fa-check"></i
+                    ></span>
+
+                    <span class="post-dot">·</span>
+
+                    <span>1 phút đọc</span>
+                  </a>
+                </footer>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/blog_posts/14115/thumb_260708080411_6a4da20b57d530.49697327.png"
+                  alt="JavaScript ES2025: Tính năng mới và patterns thực dụng"
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#"
+                    >JavaScript ES2025: Tính năng mới và patterns thực dụng</a
+                  >
+                </h3>
+                <footer class="course-footer">
+                  <a href="#" class="post-author">
+                    <div class="post-avatar">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/public-images/699181d60839d.png"
+                        alt="Ếch Trendy"
+                      />
+                    </div>
+
+                    <span class="post-user-name"
+                      >Ếch Trendy<i class="fa-solid fa-check"></i
+                    ></span>
+
+                    <span class="post-dot">·</span>
+
+                    <span>1 phút đọc</span>
+                  </a>
+                </footer>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://f8.edu.vn/assets/blog-thumbnail-fallback-CFeBZcHt.png"
+                  alt="JavaScript ES2025: Tính năng mới và patterns thực dụng"
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#"
+                    >JavaScript ES2025: Tính năng mới và patterns thực dụng</a
+                  >
+                </h3>
+                <footer class="course-footer">
+                  <a href="#" class="post-author">
+                    <div class="post-avatar">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/user_avatars/26348/62f2f0038ccdd.png"
+                        alt="Nguyen Long"
+                      />
+                    </div>
+
+                    <span class="post-user-name">Nguyen Long </span>
+
+                    <span class="post-dot">·</span>
+
+                    <span>17 phút đọc</span>
+                  </a>
+                </footer>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://f8.edu.vn/assets/blog-thumbnail-fallback-CFeBZcHt.png"
+                  alt="CSS selectors cheatsheet & details"
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#">CSS selectors cheatsheet & details</a>
+                </h3>
+                <footer class="course-footer">
+                  <a href="#" class="post-author">
+                    <div class="post-avatar">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/user_avatars/179849/638ee89e422f5.png"
+                        alt="Doãn"
+                      />
+                    </div>
+
+                    <span class="post-user-name">Doãn </span>
+
+                    <span class="post-dot">·</span>
+
+                    <span>12 phút đọc</span>
+                  </a>
+                </footer>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/blog_posts/6222/63d133becb94f.png"
+                  alt="JavaScript ES2025: Tính năng mới và patterns thực dụng"
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#"
+                    >JavaScript ES2025: Tính năng mới và patterns thực dụng</a
+                  >
+                </h3>
+                <footer class="course-footer">
+                  <a href="#" class="post-author">
+                    <div class="post-avatar">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/user_avatars/36050/649fc3c653f2c.png"
+                        alt="Nguyên Thanh"
+                      />
+                    </div>
+
+                    <span class="post-user-name"
+                      >Nguyên Thanh<i class="fa-solid fa-check"></i
+                    ></span>
+
+                    <span class="post-dot">·</span>
+
+                    <span>7 phút đọc</span>
+                  </a>
+                </footer>
+              </div>
+            </div>
+            <div class="course-item">
+              <a href="#" class="course-thumb">
+                <img
+                  src="https://f8.edu.vn/assets/blog-thumbnail-fallback-CFeBZcHt.png"
+                  alt="Sử dụng PropTypes trong ReactJS"
+                />
+              </a>
+
+              <div class="course-content">
+                <h3 class="course-title">
+                  <a href="#">Sử dụng PropTypes trong ReactJS</a>
+                </h3>
+                <footer class="course-footer">
+                  <a href="#" class="post-author">
+                    <div class="post-avatar">
+                      <img
+                        src="https://f8.edu.vn/assets/feedback-0-BFb1fhaR.jpg"
+                        alt="Hoàng Nguyễn"
+                      />
+                    </div>
+
+                    <span class="post-user-name">Hoàng Nguyễn </span>
+
+                    <span class="post-dot">·</span>
+                    <span>3 phút đọc</span>
+                  </a>
+                </footer>
+              </div>
+            </div>
+          </div>
+          <div class="title-course">
+            <h2 class="title1">Videos nổi bật</h2>
+            <button class="btn-all">
+              Xem tất cả
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="video-list">
+            <!-- VIDEO 1 -->
+            <div class="video-card">
+              <a href="#" class="video-thumb">
+                <img
+                  src="https://i.ytimg.com/vi/R6plN3FvzFY/maxresdefault.jpg"
+                  alt="Bạn sẽ làm được gì sau khóa học?"
+                />
+
+                <span class="video-play">
+                  <i class="fa-solid fa-play"></i>
+                </span>
+
+                <span class="video-duration">03:15</span>
+              </a>
+
+              <div class="video-content">
+                <h3 class="video-title">
+                  <a href="#">Bạn sẽ làm được gì sau khóa học?</a>
+                </h3>
+
+                <div class="video-stats">
+                  <div class="video-stat">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>1.150.227</span>
+                  </div>
+
+                  <div class="video-stat">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span>6.752</span>
+                  </div>
+
+                  <div class="video-stat">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>150</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- VIDEO 2 -->
+            <div class="video-card">
+              <a href="#" class="video-thumb">
+                <img
+                  src="https://i.ytimg.com/vi/YH-E4Y3EaT4/maxresdefault.jpg"
+                  alt="Video 2"
+                />
+
+                <span class="video-play">
+                  <i class="fa-solid fa-play"></i>
+                </span>
+
+                <span class="video-duration">34:51</span>
+              </a>
+
+              <div class="video-content">
+                <h3 class="video-title">
+                  <a href="#"
+                    >Sinh viên IT đi thực tập tại doanh nghiệp cần biết những
+                    gì?</a
+                  >
+                </h3>
+
+                <div class="video-stats">
+                  <div class="video-stat">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>266.150</span>
+                  </div>
+
+                  <div class="video-stat">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span>6.452</span>
+                  </div>
+
+                  <div class="video-stat">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>235</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- VIDEO 3 -->
+            <div class="video-card">
+              <a href="#" class="video-thumb">
+                <img
+                  src="https://i.ytimg.com/vi/DpvYHLUiZpc/maxresdefault.jpg"
+                  alt="Video 3"
+                />
+
+                <span class="video-play">
+                  <i class="fa-solid fa-play"></i>
+                </span>
+
+                <span class="video-duration">24:06</span>
+              </a>
+
+              <div class="video-content">
+                <h3 class="video-title">
+                  <a href="#">Phương pháp học lập trình của Admin F8?</a>
+                </h3>
+
+                <div class="video-stats">
+                  <div class="video-stat">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>132.191</span>
+                  </div>
+
+                  <div class="video-stat">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span>6.169</span>
+                  </div>
+
+                  <div class="video-stat">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>336</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- VIDEO 4 -->
+            <div class="video-card">
+              <a href="#" class="video-thumb">
+                <img
+                  src="https://i.ytimg.com/vi/sgq7BH6WxL8/maxresdefault.jpg"
+                  alt="Video 4"
+                />
+
+                <span class="video-play">
+                  <i class="fa-solid fa-play"></i>
+                </span>
+
+                <span class="video-duration">04:35</span>
+              </a>
+
+              <div class="video-content">
+                <h3 class="video-title">
+                  <a href="#"
+                    >"Code Thiếu Nhi Battle" Tranh Giành Trà Sữa Size L</a
+                  >
+                </h3>
+
+                <div class="video-stats">
+                  <div class="video-stat">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>282.929</span>
+                  </div>
+
+                  <div class="video-stat">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span>5.656</span>
+                  </div>
+
+                  <div class="video-stat">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>180</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <a href="#" class="video-thumb">
+                <img
+                  src="https://i.ytimg.com/vi/x0fSBAgBrOQ/maxresdefault.jpg"
+                  alt="Video 5"
+                />
+
+                <span class="video-play">
+                  <i class="fa-solid fa-play"></i>
+                </span>
+
+                <span class="video-duration">10:41</span>
+              </a>
+
+              <div class="video-content">
+                <h3 class="video-title">
+                  <a href="#">ReactJS là gì? Tại sao nên học ReactJS?</a>
+                </h3>
+
+                <div class="video-stats">
+                  <div class="video-stat">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>530.498</span>
+                  </div>
+
+                  <div class="video-stat">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span>3.952</span>
+                  </div>
+
+                  <div class="video-stat">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>346</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <a href="#" class="video-thumb">
+                <img
+                  src="https://i.ytimg.com/vi/AzmdwZ6e_aM/maxresdefault.jpg"
+                  alt="Video 6"
+                />
+
+                <span class="video-play">
+                  <i class="fa-solid fa-play"></i>
+                </span>
+
+                <span class="video-duration">11:08</span>
+              </a>
+
+              <div class="video-content">
+                <h3 class="video-title">
+                  <a href="#">Các thẻ HTML thông dụng</a>
+                </h3>
+
+                <div class="video-stats">
+                  <div class="video-stat">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>378.719</span>
+                  </div>
+
+                  <div class="video-stat">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span>3.860</span>
+                  </div>
+
+                  <div class="video-stat">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>207</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <a href="#" class="video-thumb">
+                <img
+                  src="https://i.ytimg.com/vi/G19jZzK5FWI/maxresdefault.jpg"
+                  alt="Video 7"
+                />
+
+                <span class="video-play">
+                  <i class="fa-solid fa-play"></i>
+                </span>
+
+                <span class="video-duration">35:04</span>
+              </a>
+
+              <div class="video-content">
+                <h3 class="video-title">
+                  <a href="#">Học Flexbox qua ví dụ</a>
+                </h3>
+
+                <div class="video-stats">
+                  <div class="video-stat">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>263.415</span>
+                  </div>
+
+                  <div class="video-stat">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span>3.504</span>
+                  </div>
+
+                  <div class="video-stat">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>215</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <a href="#" class="video-thumb">
+                <img
+                  src="https://i.ytimg.com/vi/oF7isq9IjZM/maxresdefault.jpg"
+                  alt="Video 8"
+                />
+
+                <span class="video-play">
+                  <i class="fa-solid fa-play"></i>
+                </span>
+
+                <span class="video-duration">25:40</span>
+              </a>
+
+              <div class="video-content">
+                <h3 class="video-title">
+                  <a href="#"
+                    >"Code Thiếu Nhi Battle" Tranh Giành Trà Sữa Size L</a
+                  >
+                </h3>
+
+                <div class="video-stats">
+                  <div class="video-stat">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>85.182</span>
+                  </div>
+
+                  <div class="video-stat">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span>3.429</span>
+                  </div>
+
+                  <div class="video-stat">
+                    <i class="fa-solid fa-comment"></i>
+                    <span>233</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="footer-row">
+          <div class="footer-column footer-main">
+            <div class="footer-top">
+              <a href="/" class="footer-logo">
+                <img
+                  src="https://files.fullstack.edu.vn/f8-prod/organization-logos/694743c405102.png"
+                  alt="F8"
+                />
+              </a>
+
+              <h2>HỌC LẬP TRÌNH ĐỂ ĐI LÀM</h2>
+            </div>
+
+            <p class="footer-contact">
+              <b>Điện thoại:</b>
+              <a href="tel:0819198989">08 1919 8989</a>
+              <br />
+
+              <b>Email:</b>
+              <a href="mailto:contact@f8.edu.vn"> contact@f8.edu.vn </a>
+              <br />
+
+              <b>Địa chỉ liên hệ:</b>
+              Số 1, ngõ 41, Trần Duy Hưng, Cầu Giấy, Hà Nội
+            </p>
+
+            <div class="footer-certification">
+              <a href="https://www.dmca.com/" target="_blank">
+                <img src="./asset/imgs/dmca.png" alt="DMCA" />
+              </a>
+
+              <a
+                href="http://online.gov.vn/Home/WebDetails/138269"
+                target="_blank"
+              >
+                <img
+                  src="https://f8.edu.vn/assets/bo-cong-thuong-DpFUhjUM.png"
+                  alt="Bộ Công Thương"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h2 class="footer-heading">Về F8</h2>
+
+            <ul class="footer-list">
+              <li><a href="/about-us">Giới thiệu</a></li>
+              <li><a href="/contact">Liên hệ</a></li>
+              <li>
+                <a href="/policies"> Điều khoản & Quy định </a>
+              </li>
+              <li>
+                <a href="/information-security-policy"> Chính sách bảo mật </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2 class="footer-heading">Hỗ trợ</h2>
+
+            <ul class="footer-list">
+              <li>
+                <a href="/payment-policy"> Chính sách thanh toán </a>
+              </li>
+              <li>
+                <a href="/shipping-policy"> Chính sách vận chuyển </a>
+              </li>
+              <li>
+                <a href="/inspection-policy"> Chính sách kiểm hàng </a>
+              </li>
+              <li>
+                <a href="/pricing-information"> Quy định về giá </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2 class="footer-heading">Công cụ</h2>
+
+            <ul class="footer-list">
+              <li>
+                <a href="https://cv.f8.edu.vn/" target="_blank">
+                  Tạo CV xin việc
+                </a>
+              </li>
+              <li>
+                <a href="/links"> Rút gọn liên kết </a>
+              </li>
+              <li>
+                <a href="https://clippy.f8.edu.vn/" target="_blank">
+                  Clip-path maker
+                </a>
+              </li>
+              <li>
+                <a href="https://snippet-generator.f8.edu.vn/" target="_blank">
+                  Snippet generator
+                </a>
+              </li>
+              <li>
+                <a href="https://grid.f8.edu.vn/" target="_blank">
+                  CSS Grid generator
+                </a>
+              </li>
+              <li>
+                <a href="https://botayra.f8.edu.vn/" target="_blank">
+                  Cảnh báo sờ tay lên mặt
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column footer-company">
+            <h2 class="footer-heading">
+              <a
+                href="https://www.google.com/search?q=CÔNG+TY+CỔ+PHẦN+CÔNG+NGHỆ+GIÁO+DỤC+F8"
+                target="_blank"
+              >
+                CÔNG TY CỔ PHẦN CÔNG NGHỆ GIÁO DỤC F8
+              </a>
+            </h2>
+
+            <ul class="footer-list">
+              <li>
+                <b>Địa chỉ:</b>
+                Tầng 4, Tòa nhà Anh Minh, số 36 Hoàng Cầu, Thành phố Hà Nội
+              </li>
+
+              <li>
+                <b>Mã số doanh nghiệp:</b>
+                0109922901 do Chi cục Thuế Quận Đống Đa, Cục Thuế TP. Hà Nội cấp
+                ngày 04/03/2022
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            © 2018 - 2026 F8. Nền tảng học lập trình hàng đầu Việt Nam.
+          </p>
+
+          <div class="footer-social">
+            <a
+              href="https://www.youtube.com/@f8vnofficial"
+              target="_blank"
+              title="F8 trên Youtube"
+            >
+              <i class="fa-brands fa-square-youtube"></i>
+            </a>
+
+            <a
+              href="https://www.facebook.com/f8vnofficial"
+              target="_blank"
+              title="F8 trên Facebook"
+            >
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@f8hoclaptrinh"
+              target="_blank"
+              title="F8 trên Tiktok"
+            >
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
