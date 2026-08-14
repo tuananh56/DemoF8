@@ -883,14 +883,6 @@ header {
     align-items: center;
     gap: 6px;
 }
-.course-item {
-    display:flex;
-    flex-direction:column;
-    background:#fff;
-    border-radius:16px;
-    overflow:hidden;
-    min-height: 40px;
-}
 
 .course-card:hover {
     box-shadow:0 8px 20px rgba(0,0,0,.08);
