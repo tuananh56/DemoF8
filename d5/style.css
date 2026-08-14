@@ -741,13 +741,13 @@ header {
 
 .course-badge {
     display: inline-block;
-    padding: 4px 8px;
+    width: fit-content;
+    padding: 4px 4px;
     border-radius: 15px;
     background-color: #F6E3DD;
     color: #F05629;
-    font-size: 14px;
-    font-weight: 500;
-    font-weight: bold;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 
