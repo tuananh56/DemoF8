@@ -198,7 +198,7 @@
     position: relative;
 
     width: auto;
-    min-height: 100;
+    min-height: 100px;
 
     padding: 28px 24px 24px;
 
@@ -210,14 +210,18 @@
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
 
     transition:
-        box-shadow 0.2s ease,
-        transform 0.2s ease;
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
 }
 
 .assignment-card:hover {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
-}
+    border-color: #f4b9a7;
 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+
+    transform: translateY(-2px);
+}
 
 
 
