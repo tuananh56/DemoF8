@@ -1,0 +1,1058 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://files.fullstack.edu.vn/f8-prod/organization-logos/694743c405102.png"
+    />
+    <title>Hỏi và đáp</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/discussions.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-brand">
+        <a href="/" class="header-logo">
+          <img
+            src="https://files.fullstack.edu.vn/f8-prod/organization-logos/694743c405102.png"
+            alt="F8"
+          />
+        </a>
+        <h1 class="header-slogan">
+          <a href="#">HỌC LẬP TRÌNH ĐỂ ĐI LÀM</a>
+        </h1>
+      </div>
+      <div class="header-discovery">
+        <button class="header-category">
+          <i class="fa-solid fa-table-cells-large"></i>
+          <span>Danh mục</span>
+        </button>
+
+        <div class="header-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            class="text"
+            type="text"
+            placeholder="Tìm khóa học, bài tập, hỏi đáp..."
+          />
+        </div>
+      </div>
+      <div class="header-action">
+        <button type="button" class="header-content">
+          <span class="header-content-inner">
+            <span class="header-content-title"> Khóa học của tôi </span>
+          </span>
+        </button>
+        <button class="header-notification">
+          <i class="fa-duotone fa-solid fa-bell"></i>
+        </button>
+        <button class="header-avatar">
+          <img
+            src="https://files.f8.edu.vn/f8-prod/avatars/6a6d8718342fd.jpg"
+            alt="ho tuananh"
+          />
+        </button>
+      </div>
+    </header> 
+    <main>
+      <div class="sidebar">
+        <ul class="sidebar-list">
+          <li>
+            <a href="/d5/index.html" class="sidebar-item active">
+              <i class="fa-solid fa-house"></i>
+              <span>Trang chủ</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/d5/index.html" class="sidebar-item">
+              <i class="fa-solid fa-road"></i>
+              <span>Lộ trình</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/d5/index.html" class="sidebar-item">
+              <i class="fa-solid fa-newspaper"></i>
+              <span>Bài viết</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/d5/index.html" class="sidebar-item">
+              <i class="fa-solid fa-bullhorn"></i>
+              <span>Bản tin</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/d5/discussions.html" class="sidebar-item">
+              <i class="fa-solid fa-comments"></i>
+              <span>Hỏi đáp</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/d5/assignment-classes.html" class="sidebar-item">
+              <i class="fa-solid fa-clipboard-list"></i>
+              <span>Bài tập</span>
+              <span class="badge">2</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="discussions-main">
+  
+        <div class="discussions-header">
+          <h1 class="discussions-title">Hỏi và đáp</h1>
+          <p>Kênh hỏi đáp riêng tư dành riêng cho học viên Pro.</p>
+        </div>
+        <div class="assignment-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <input type="search" placeholder="Tìm theo tiêu đề câu hỏi..." />
+        </div>
+
+        <div class="discussion-filter">
+          <div class="discussion-scope">
+            <button
+              type="button"
+              class="discussion-filter-button"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="Chọn phạm vi câu hỏi"
+            >
+  
+              <span class="discussion-filter-icon">
+                <i class="fa-solid fa-user-group"></i>
+              </span>
+
+
+              <span class="discussion-filter-label" title="Tất cả câu hỏi">
+                Tất cả câu hỏi
+              </span>
+
+    
+              <span class="discussion-filter-arrow">
+                <i class="fa-solid fa-chevron-down"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="discussions-sidebar">
+
+          <section class="discussion-categories">
+            <h2 class="section-title">Danh mục</h2>
+
+            <div
+              class="category-list"
+              role="group"
+              aria-label="Lọc theo danh mục câu hỏi"
+            >
+
+              <button
+                type="button"
+                class="category-item active"
+                aria-pressed="true"
+              >
+                <span class="category-icon">
+                  <img
+                    src="https://f8.edu.vn/assets/infinity-Z7lSIx-W.png"
+                    alt=""
+                  />
+                </span>
+
+                <span class="category-name"> Tất cả </span>
+
+                <span class="category-count">
+                  <i class="fa-solid fa-infinity"></i>
+                </span>
+              </button>
+
+
+              <button type="button" class="category-item" aria-pressed="false">
+                <span class="category-icon">
+                  <img
+                    src="https://files.f8.edu.vn/f8-prod/discussion_categories/3/63071c1d314f6.png"
+                    alt=""
+                  />
+                </span>
+
+                <span class="category-name"> Bài học lý thuyết </span>
+
+                <span class="category-count"> 4.137 </span>
+              </button>
+
+
+              <button type="button" class="category-item" aria-pressed="false">
+                <span class="category-icon">
+                  <img
+                    src="https://files.f8.edu.vn/f8-prod/discussion_categories/6/63b6dd6305fee.png"
+                    alt=""
+                  />
+                </span>
+
+                <span class="category-name"> Bài học thử thách </span>
+
+                <span class="category-count"> 699 </span>
+              </button>
+
+              <button type="button" class="category-item" aria-pressed="false">
+                <span class="category-icon">
+                  <img
+                    src="https://files.f8.edu.vn/f8-prod/discussion_categories/7/62fefcc14a114.png"
+                    alt=""
+                  />
+                </span>
+
+                <span class="category-name"> Các loại bài tập khác </span>
+
+                <span class="category-count"> 218 </span>
+              </button>
+
+              <button type="button" class="category-item" aria-pressed="false">
+                <span class="category-icon">
+                  <img
+                    src="https://files.f8.edu.vn/f8-prod/discussion_categories/4/63070908e58ce.png"
+                    alt=""
+                  />
+                </span>
+
+                <span class="category-name"> Ứng dụng Flashcards </span>
+
+                <span class="category-count"> 46 </span>
+              </button>
+
+              <button type="button" class="category-item" aria-pressed="false">
+                <span class="category-icon">
+                  <img
+                    src="https://files.f8.edu.vn/f8-prod/discussion_categories/5/6307060933c46.png"
+                    alt=""
+                  />
+                </span>
+
+                <span class="category-name"> Chủ đề ngoài khóa học </span>
+
+                <span class="category-count"> 805 </span>
+              </button>
+
+              <button type="button" class="category-item" aria-pressed="false">
+                <span class="category-icon">
+                  <img
+                    src="https://files.f8.edu.vn/f8-prod/discussion_categories/8/63070f6404a5a.png"
+                  />
+                </span>
+                <span class="category-name"> Báo lỗi cho F8 </span>
+                <span class="category-count"> 316 </span>
+              </button>
+
+
+              <button type="button" class="category-item" aria-pressed="false">
+                <span class="category-icon">
+                  <img
+                    src="https://files.f8.edu.vn/f8-prod/discussion_categories/27/6704b1c8122a5.png"
+                    alt=""
+                  />
+                </span>
+
+                <span class="category-name"> Show dự án </span>
+
+                <span class="category-count"> 114 </span>
+              </button>
+
+
+              <button type="button" class="category-item" aria-pressed="false">
+                <span class="category-icon">
+                  <img
+                    src="https://files.f8.edu.vn/f8-prod/discussion_categories/28/67f79f0f6d2d7.png"
+                    alt=""
+                  />
+                </span>
+
+                <span class="category-name"> Câu hỏi trong khóa học </span>
+
+                <span class="category-count"> 42 </span>
+              </button>
+            </div>
+          </section>
+          <section class="most-helpful">
+            <div class="most-helpful-header">
+              <h2 class="section-title">Hữu ích nhất</h2>
+
+              <span class="helpful-time"> 30 ngày qua </span>
+            </div>
+
+            <div class="most-helpful-content">
+        
+              <div class="helpful-item">
+                <div class="helpful-user">
+                  <a href="#">
+                    <div class="user-avatar pro">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/public-images/6870d57b274a2.png"
+                        alt="Vũ Quốc Dũng"
+                      />
+                    </div>
+                  </a>
+
+                  <a href="#">
+                    <h4 class="user-name">
+                      <span> Vũ Quốc Dũng </span>
+
+                      <i class="fa-solid fa-circle-check"></i>
+                    </h4>
+                  </a>
+                </div>
+
+                <div class="helpful-count">
+                  <i class="fa-solid fa-circle-check"></i>
+
+                  <span> 6 </span>
+                </div>
+              </div>
+
+       
+              <div class="helpful-item">
+                <div class="helpful-user">
+                  <a href="#">
+                    <div class="user-avatar pro">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/user_photos/273325/638b52704bad3.jpg"
+                        alt="Minh Đức Đỗ"
+                      />
+                    </div>
+                  </a>
+
+                  <a href="#">
+                    <h4 class="user-name">
+                      <span> Minh Đức Đỗ </span>
+                    </h4>
+                  </a>
+                </div>
+
+                <div class="helpful-count">
+                  <i class="fa-solid fa-circle-check"></i>
+
+                  <span> 1 </span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section class="discussion-question">
+          <h2 class="section-title">Câu hỏi</h2>
+          <div class="question">
+            <div class="discussion-item">
+              <div class="discussion-icon">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/discussion_categories/22/657fd6784b943.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="discussion-body">
+                <div class="discussion-content">
+                  <h3 class="discussion-title">
+                    <a href="#"> p tab không hoạt động </a>
+                  </h3>
+
+                  <div class="discussion-meta">
+                    <a href="#" class="author">Lan Hà</a>
+                    <span>đăng</span>
+                    <time>5 giờ trước</time>
+                    <span>·</span>
+                    <span>trong</span>
+                    <button>Bài học thử thách</button>
+                  </div>
+                </div>
+
+                <div class="discussion-footer">
+                  <a href="#" class="course"> HTML CSS Pro </a>
+
+                  <div class="discussion-right">
+                    <span class="status"> Chờ trả lời </span>
+
+                    <div class="participants">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/avatars/6a61e18356335.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/public-images/6870d57b274a2.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <a href="#" class="answers">
+                      <i class="fa-regular fa-message"></i>
+                      <span>1</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="discussion-item">
+              <div class="discussion-icon">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/discussion_categories/3/63071c1d314f6.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="discussion-body">
+                <div class="discussion-content">
+                  <h3 class="discussion-title">
+                    <a href="#"> Em chưa bỏ color nhưng chữ hiện màu xanh ạ</a>
+                  </h3>
+
+                  <div class="discussion-meta">
+                    <a href="#" class="author">Trần Minh</a>
+                    <span>đăng</span>
+                    <time>2 ngày trước</time>
+                    <span>·</span>
+                    <span>trong</span>
+                    <button>Bài học lý thuyết</button>
+                  </div>
+                </div>
+
+                <div class="discussion-footer">
+                  <a href="#" class="course"> HTML CSS Pro </a>
+
+                  <div class="discussion-right">
+                    <span class="status"> Chờ trả lời </span>
+
+                    <div class="participants">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/avatars/6a61e18356335.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/public-images/6870d57b274a2.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <a href="#" class="answers">
+                      <i class="fa-regular fa-message"></i>
+                      <span>1</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="discussion-item">
+              <div class="discussion-icon">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/discussion_categories/22/657fd6784b943.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="discussion-body">
+                <div class="discussion-content">
+                  <h3 class="discussion-title">
+                    <a href="#"> em không thể vượt qua bài dù đã cho ra kết quả đúng </a>
+                  </h3>
+
+                  <div class="discussion-meta">
+                    <a href="#" class="author">Mai Anh Duy</a>
+                    <span>đăng</span>
+                    <time>2 ngày trước</time>
+                    <span>·</span>
+                    <span>trong</span>
+                    <button>Bài học thử thách</button>
+                  </div>
+                </div>
+
+                <div class="discussion-footer">
+                  <a href="#" class="course"> HTML CSS Pro </a>
+
+                  <div class="discussion-right">
+                    <span class="status"> Chờ trả lời </span>
+
+                    <div class="participants">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/avatars/6a61e18356335.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/public-images/6870d57b274a2.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <a href="#" class="answers">
+                      <i class="fa-regular fa-message"></i>
+                      <span>1</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="discussion-item">
+              <div class="discussion-icon">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/discussion_categories/3/63071c1d314f6.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="discussion-body">
+                <div class="discussion-content">
+                  <h3 class="discussion-title">
+                    <a href="#"> Mình chưa có quyền truy cập và dự án chỉnh sửa: tainguyenwebphu@gmail.com </a>
+                  </h3>
+
+                  <div class="discussion-meta">
+                    <a href="#" class="author">Trần Minh</a>
+                    <span>đăng</span>
+                    <time>2 ngày trước</time>
+                    <span>·</span>
+                    <span>trong</span>
+                    <button>Bài học lý thuyết</button>
+                  </div>
+                </div>
+
+                <div class="discussion-footer">
+                  <a href="#" class="course"> HTML CSS Pro </a>
+
+                  <div class="discussion-right">
+                    <span class="status"> Chờ trả lời </span>
+
+                    <div class="participants">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/avatars/6a61e18356335.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/public-images/6870d57b274a2.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <a href="#" class="answers">
+                      <i class="fa-regular fa-message"></i>
+                      <span>1</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="discussion-item">
+              <div class="discussion-icon">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/discussion_categories/8/63070f6404a5a.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="discussion-body">
+                <div class="discussion-content">
+                  <h3 class="discussion-title">
+                    <a href="#"> Không truy cập được link figma  dự án "Thử thách làm độc lập" </a>
+                  </h3>
+
+                  <div class="discussion-meta">
+                    <a href="#" class="author">Nguyễn Hoàng Tuấn Anh</a>
+                    <span>đăng</span>
+                    <time>3 ngày trước</time>
+                    <span>·</span>
+                    <span>trong</span>
+                    <button>Báo lỗi trong F8</button>
+                  </div>
+                </div>
+
+                <div class="discussion-footer">
+                  <a href="#" class="course"> HTML CSS Pro </a>
+
+                  <div class="discussion-right">
+                    <span class="status"> Chờ trả lời </span>
+
+                    <div class="participants">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/avatars/6a61e18356335.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/public-images/6870d57b274a2.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <a href="#" class="answers">
+                      <i class="fa-regular fa-message"></i>
+                      <span>1</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="discussion-item">
+              <div class="discussion-icon">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/discussion_categories/3/63071c1d314f6.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="discussion-body">
+                <div class="discussion-content">
+                  <h3 class="discussion-title">
+                    <a href="#"> Ad add em vào với ạ </a>
+                  </h3>
+
+                  <div class="discussion-meta">
+                    <a href="#" class="author">Phạm Thanh Tuấn</a>
+                    <span>đăng</span>
+                    <time>4 ngày trước</time>
+                    <span>·</span>
+                    <span>trong</span>
+                    <button>Bài học lý thuyết</button>
+                  </div>
+                </div>
+
+                <div class="discussion-footer">
+                  <a href="#" class="course"> HTML CSS Pro </a>
+
+                  <div class="discussion-right">
+                    <span class="status"> Chờ trả lời </span>
+
+                    <div class="participants">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/avatars/6a61e18356335.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/public-images/6870d57b274a2.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <a href="#" class="answers">
+                      <i class="fa-regular fa-message"></i>
+                      <span>1</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="discussion-item">
+              <div class="discussion-icon">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/discussion_categories/3/63071c1d314f6.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="discussion-body">
+                <div class="discussion-content">
+                  <h3 class="discussion-title">
+                    <a href="#"> Thắc mắc thẻ tiêu đề trong Modal/Dialog </a>
+                  </h3>
+
+                  <div class="discussion-meta">
+                    <a href="#" class="author">Nguyễn Hùng</a>
+                    <span>đăng</span>
+                    <time>5 ngày trước</time>
+                    <span>·</span>
+                    <span>trong</span>
+                    <button>Bài học lý thuyết</button>
+                  </div>
+                </div>
+
+                <div class="discussion-footer">
+                  <a href="#" class="course"> HTML CSS Pro </a>
+
+                  <div class="discussion-right">
+                    <span class="status"> Chờ trả lời </span>
+
+                    <div class="participants">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/avatars/6a61e18356335.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/public-images/6870d57b274a2.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <a href="#" class="answers">
+                      <i class="fa-regular fa-message"></i>
+                      <span>1</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="discussion-item">
+              <div class="discussion-icon">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/discussion_categories/22/657fd6784b943.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="discussion-body">
+                <div class="discussion-content">
+                  <h3 class="discussion-title">
+                    <a href="#"> Em nộp bài nhưng bị báo vậy, thử đổi 3 mạng rồi nhưng em vẫn không thể nộp để học bài tiếp theo </a>
+                  </h3>
+
+                  <div class="discussion-meta">
+                    <a href="#" class="author">0802 GaoMeow</a>
+                    <span>đăng</span>
+                    <time>6 ngày trước</time>
+                    <span>·</span>
+                    <span>trong</span>
+                    <button>Bài học thử thách</button>
+                  </div>
+                </div>
+
+                <div class="discussion-footer">
+                  <a href="#" class="course"> HTML CSS Pro </a>
+
+                  <div class="discussion-right">
+                    <span class="status"> Chờ trả lời </span>
+
+                    <div class="participants">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/avatars/6a61e18356335.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/public-images/6870d57b274a2.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <a href="#" class="answers">
+                      <i class="fa-regular fa-message"></i>
+                      <span>1</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="discussion-item">
+              <div class="discussion-icon">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/discussion_categories/28/67f79f0f6d2d7.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="discussion-body">
+                <div class="discussion-content">
+                  <h3 class="discussion-title">
+                    <a href="#"> Thắc mắc </a>
+                  </h3>
+
+                  <div class="discussion-meta">
+                    <a href="#" class="author">Hoàng Hải Nam</a>
+                    <span>đăng</span>
+                    <time>7 ngày trước</time>
+                    <span>·</span>
+                    <span>trong</span>
+                    <button>Câu hỏi trong khoá học</button>
+                  </div>
+                </div>
+
+                <div class="discussion-footer">
+                  <a href="#" class="course"> HTML CSS Pro </a>
+
+                  <div class="discussion-right">
+                    <span class="status"> Chờ trả lời </span>
+
+                    <div class="participants">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/avatars/6a61e18356335.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/public-images/6870d57b274a2.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <a href="#" class="answers">
+                      <i class="fa-regular fa-message"></i>
+                      <span>1</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="discussion-item">
+              <div class="discussion-icon">
+                <img
+                  src="https://files.f8.edu.vn/f8-prod/discussion_categories/3/63071c1d314f6.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="discussion-body">
+                <div class="discussion-content">
+                  <h3 class="discussion-title">
+                    <a href="#"> Hỗ trợ chọn fonts google </a>
+                  </h3>
+
+                  <div class="discussion-meta">
+                    <a href="#" class="author">Trần Minh</a>
+                    <span>đăng</span>
+                    <time>7 ngày trước</time>
+                    <span>·</span>
+                    <span>trong</span>
+                    <button>Bài học lý thuyết</button>
+                  </div>
+                </div>
+
+                <div class="discussion-footer">
+                  <a href="#" class="course"> HTML CSS Pro </a>
+
+                  <div class="discussion-right">
+                    <span class="status"> Chờ trả lời </span>
+
+                    <div class="participants">
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/avatars/6a61e18356335.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://files.f8.edu.vn/f8-prod/public-images/6870d57b274a2.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <a href="#" class="answers">
+                      <i class="fa-regular fa-message"></i>
+                      <span>1</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagination">
+            <div class="pagination-limit">
+              <span>Xem</span>
+
+              <select>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="500">500</option>
+              </select>
+
+              <span>mục</span>
+            </div>
+
+            <div class="pagination-pages">
+              <button class="page disabled">
+                <i class="fa-solid fa-angles-left"></i>
+              </button>
+
+              <button class="page active">1</button>
+              <button class="page">2</button>
+              <button class="page">3</button>
+              <button class="page">4</button>
+              <button class="page">5</button>
+              <button class="page">6</button>
+
+              <span class="page disabled">...</span>
+
+              <button class="page">318</button>
+              <button class="page">319</button>
+
+              <button class="page">
+                <i class="fa-solid fa-angles-right"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="footer-row">
+          <div class="footer-column footer-main">
+            <div class="footer-top">
+              <a href="/" class="footer-logo">
+                <img
+                  src="https://files.fullstack.edu.vn/f8-prod/organization-logos/694743c405102.png"
+                  alt="F8"
+                />
+              </a>
+
+              <h2>HỌC LẬP TRÌNH ĐỂ ĐI LÀM</h2>
+            </div>
+
+            <p class="footer-contact">
+              <b>Điện thoại:</b>
+              <a href="tel:0819198989">08 1919 8989</a>
+              <br />
+
+              <b>Email:</b>
+              <a href="mailto:contact@f8.edu.vn"> contact@f8.edu.vn </a>
+              <br />
+
+              <b>Địa chỉ liên hệ:</b>
+              Số 1, ngõ 41, Trần Duy Hưng, Cầu Giấy, Hà Nội
+            </p>
+
+            <div class="footer-certification">
+              <a href="https://www.dmca.com/" target="_blank">
+                <img src="./asset/imgs/dmca.png" alt="DMCA" />
+              </a>
+
+              <a
+                href="http://online.gov.vn/Home/WebDetails/138269"
+                target="_blank"
+              >
+                <img
+                  src="https://f8.edu.vn/assets/bo-cong-thuong-DpFUhjUM.png"
+                  alt="Bộ Công Thương"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h2 class="footer-heading">Về F8</h2>
+
+            <ul class="footer-list">
+              <li><a href="/about-us">Giới thiệu</a></li>
+              <li><a href="/contact">Liên hệ</a></li>
+              <li>
+                <a href="/policies"> Điều khoản & Quy định </a>
+              </li>
+              <li>
+                <a href="/information-security-policy"> Chính sách bảo mật </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2 class="footer-heading">Hỗ trợ</h2>
+
+            <ul class="footer-list">
+              <li>
+                <a href="/payment-policy"> Chính sách thanh toán </a>
+              </li>
+              <li>
+                <a href="/shipping-policy"> Chính sách vận chuyển </a>
+              </li>
+              <li>
+                <a href="/inspection-policy"> Chính sách kiểm hàng </a>
+              </li>
+              <li>
+                <a href="/pricing-information"> Quy định về giá </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2 class="footer-heading">Công cụ</h2>
+
+            <ul class="footer-list">
+              <li>
+                <a href="https://cv.f8.edu.vn/" target="_blank">
+                  Tạo CV xin việc
+                </a>
+              </li>
+              <li>
+                <a href="/links"> Rút gọn liên kết </a>
+              </li>
+              <li>
+                <a href="https://clippy.f8.edu.vn/" target="_blank">
+                  Clip-path maker
+                </a>
+              </li>
+              <li>
+                <a href="https://snippet-generator.f8.edu.vn/" target="_blank">
+                  Snippet generator
+                </a>
+              </li>
+              <li>
+                <a href="https://grid.f8.edu.vn/" target="_blank">
+                  CSS Grid generator
+                </a>
+              </li>
+              <li>
+                <a href="https://botayra.f8.edu.vn/" target="_blank">
+                  Cảnh báo sờ tay lên mặt
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column footer-company">
+            <h2 class="footer-heading">
+              <a
+                href="https://www.google.com/search?q=CÔNG+TY+CỔ+PHẦN+CÔNG+NGHỆ+GIÁO+DỤC+F8"
+                target="_blank"
+              >
+                CÔNG TY CỔ PHẦN CÔNG NGHỆ GIÁO DỤC F8
+              </a>
+            </h2>
+
+            <ul class="footer-list">
+              <li>
+                <b>Địa chỉ:</b>
+                Tầng 4, Tòa nhà Anh Minh, số 36 Hoàng Cầu, Thành phố Hà Nội
+              </li>
+
+              <li>
+                <b>Mã số doanh nghiệp:</b>
+                0109922901 do Chi cục Thuế Quận Đống Đa, Cục Thuế TP. Hà Nội cấp
+                ngày 04/03/2022
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            © 2018 - 2026 F8. Nền tảng học lập trình hàng đầu Việt Nam.
+          </p>
+
+          <div class="footer-social">
+            <a
+              href="https://www.youtube.com/@f8vnofficial"
+              target="_blank"
+              title="F8 trên Youtube"
+            >
+              <i class="fa-brands fa-square-youtube"></i>
+            </a>
+
+            <a
+              href="https://www.facebook.com/f8vnofficial"
+              target="_blank"
+              title="F8 trên Facebook"
+            >
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@f8hoclaptrinh"
+              target="_blank"
+              title="F8 trên Tiktok"
+            >
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

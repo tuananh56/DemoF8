@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/assignment.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://files.fullstack.edu.vn/f8-prod/organization-logos/694743c405102.png"
+    />
+    <title>Bài tập của tôi - F8</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-brand">
+        <a href="/" class="header-logo">
+          <img
+            src="https://files.fullstack.edu.vn/f8-prod/organization-logos/694743c405102.png"
+            alt="F8"
+          />
+        </a>
+        <h1 class="header-slogan">
+          <a href="#">HỌC LẬP TRÌNH ĐỂ ĐI LÀM</a>
+        </h1>
+      </div>
+      <div class="header-discovery">
+        <button class="header-category">
+          <i class="fa-solid fa-table-cells-large"></i>
+          <span>Danh mục</span>
+        </button>
+
+        <div class="header-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            class="text"
+            type="text"
+            placeholder="Tìm khóa học, bài tập, hỏi đáp..."
+          />
+        </div>
+      </div>
+      <div class="header-action">
+        <button type="button" class="header-content">
+          <span class="header-content-inner">
+            <span class="header-content-title"> Khóa học của tôi </span>
+          </span>
+        </button>
+        <button class="header-notification">
+          <i class="fa-duotone fa-solid fa-bell"></i>
+        </button>
+        <button class="header-avatar">
+          <img
+            src="https://files.f8.edu.vn/f8-prod/avatars/6a6d8718342fd.jpg"
+            alt="ho tuananh"
+          />
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="sidebar">
+        <ul class="sidebar-list">
+          <li>
+            <a href="/d5/index.html" class="sidebar-item active">
+              <i class="fa-solid fa-house"></i>
+              <span>Trang chủ</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/d5/index.html" class="sidebar-item">
+              <i class="fa-solid fa-road"></i>
+              <span>Lộ trình</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/d5/index.html" class="sidebar-item">
+              <i class="fa-solid fa-newspaper"></i>
+              <span>Bài viết</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/d5/index.html" class="sidebar-item">
+              <i class="fa-solid fa-bullhorn"></i>
+              <span>Bản tin</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/d5/discussions.html" class="sidebar-item">
+              <i class="fa-solid fa-comments"></i>
+              <span>Hỏi đáp</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/d5/assignment-classes.html" class="sidebar-item">
+              <i class="fa-solid fa-clipboard-list"></i>
+              <span>Bài tập</span>
+              <span class="badge">2</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="assignment-main">
+        <div class="assignment-header">
+          <h1 class="assignment-title">Bài tập của tôi</h1>
+
+          <p>Theo dõi tiến độ bài tập từ các lớp đã đăng ký.</p>
+        </div>
+        <nav class="breadcrumb">
+          <ol>
+            <li>
+              <a href="#">Bài tập</a>
+            </li>
+
+            <li>Tất cả</li>
+          </ol>
+        </nav>
+        <div class="assignment-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <input type="search" placeholder="Tìm theo tên bài tập..." />
+        </div>
+
+        <div class="assignment-filters">
+          <button class="active">
+            <i class="fa-solid fa-list"></i>
+            <span>Tất cả (5)</span>
+          </button>
+
+          <button>
+            <i class="fa-solid fa-clock"></i>
+            <span>Cần nộp (1)</span>
+          </button>
+
+          <button>
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Đang chấm (1)</span>
+          </button>
+
+          <button>
+            <i class="fa-solid fa-eye"></i>
+            <span>Đã chấm điểm (3)</span>
+          </button>
+        </div>
+
+        <section class="assignment-list">
+
+          <article class="assignment-card pending-card">
+
+            <div class="assignment-status pending">
+              <i class="fa-solid fa-clock"></i>
+
+              <span>CHỜ NỘP</span>
+            </div>
+
+
+            <div class="assignment-body">
+              <h2 class="assignment-title">
+                <a href="#">
+                  Buổi 6: CSS Background, Effect, Transform, Transition,
+                  Animation
+                </a>
+              </h2>
+
+              <div class="assignment-bottom">
+                <div class="assignment-meta">
+                  <span class="assignment-class"> FS NodeJS K22 </span>
+
+                  <span class="assignment-dot"> · </span>
+
+                  <span class="assignment-due warning">
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                    Còn 3 ngày
+                  </span>
+                </div>
+
+                <a href="#" class="assignment-button">
+                  <span>Mở bài tập</span>
+
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="assignment-card">
+            <div class="assignment-status submitted">
+              <i class="fa-solid fa-circle-check"></i>
+
+              <span>ĐÃ NỘP</span>
+            </div>
+
+            <div class="assignment-body">
+              <h2 class="assignment-title">
+                <a href="#">
+                  Buổi 5: Flexbox, Position, Grid, Z-index, Typography
+                </a>
+              </h2>
+
+              <div class="assignment-bottom">
+                <div class="assignment-meta">
+                  <span class="assignment-class"> FS NodeJS K22 </span>
+
+                  <span class="assignment-dot"> · </span>
+
+                  <span class="assignment-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                    14/08/2026
+                  </span>
+                </div>
+
+                <a href="#" class="assignment-button">
+                  <span>Mở bài tập</span>
+
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="assignment-card">
+            <div class="assignment-status graded">
+              <i class="fa-solid fa-circle-check"></i>
+
+              <span>ĐẠT</span>
+            </div>
+
+            <div class="assignment-body">
+              <h2 class="assignment-title">
+                <a href="#">
+                  Buổi 4: Selector, Inheritance, Specificity, Unit, Reset,
+                  Layout types CSS
+                </a>
+              </h2>
+
+              <div class="assignment-bottom">
+                <div class="assignment-meta">
+                  <span class="assignment-class"> FS NodeJS K22 </span>
+
+                  <span class="assignment-dot"> · </span>
+
+                  <span class="assignment-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                    07/08/2026
+                  </span>
+                </div>
+
+                <a href="#" class="assignment-button">
+                  <span>Xem bài tập</span>
+
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="assignment-card">
+            <div class="assignment-status graded">
+              <i class="fa-solid fa-circle-check"></i>
+
+              <span>ĐẠT</span>
+            </div>
+
+            <div class="assignment-body">
+              <h2 class="assignment-title">
+                <a href="#">
+                  Buổi 3: Link, Media, Form, Table HTML, Selector CSS
+                </a>
+              </h2>
+
+              <div class="assignment-bottom">
+                <div class="assignment-meta">
+                  <span class="assignment-class"> FS NodeJS K22 </span>
+
+                  <span class="assignment-dot"> · </span>
+
+                  <span class="assignment-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                    03/08/2026
+                  </span>
+                </div>
+
+                <a href="#" class="assignment-button">
+                  <span>Xem bài tập</span>
+
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="assignment-card">
+            <div class="assignment-status graded">
+              <i class="fa-solid fa-circle-check"></i>
+
+              <span>ĐẠT</span>
+            </div>
+
+            <div class="assignment-body">
+              <h2 class="assignment-title">
+                <a href="#">
+                  Buổi 2: Syntax, Semantic, Entity, Tag types trong HTML
+                </a>
+              </h2>
+
+              <div class="assignment-bottom">
+                <div class="assignment-meta">
+                  <span class="assignment-class"> FS NodeJS K22 </span>
+
+                  <span class="assignment-dot"> · </span>
+
+                  <span class="assignment-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                    01/08/2026
+                  </span>
+                </div>
+
+                <a href="#" class="assignment-button">
+                  <span>Xem bài tập</span>
+
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="footer-row">
+          <div class="footer-column footer-main">
+            <div class="footer-top">
+              <a href="/" class="footer-logo">
+                <img
+                  src="https://files.fullstack.edu.vn/f8-prod/organization-logos/694743c405102.png"
+                  alt="F8"
+                />
+              </a>
+
+              <h2>HỌC LẬP TRÌNH ĐỂ ĐI LÀM</h2>
+            </div>
+
+            <p class="footer-contact">
+              <b>Điện thoại:</b>
+              <a href="tel:0819198989">08 1919 8989</a>
+              <br />
+
+              <b>Email:</b>
+              <a href="mailto:contact@f8.edu.vn"> contact@f8.edu.vn </a>
+              <br />
+
+              <b>Địa chỉ liên hệ:</b>
+              Số 1, ngõ 41, Trần Duy Hưng, Cầu Giấy, Hà Nội
+            </p>
+
+            <div class="footer-certification">
+              <a href="https://www.dmca.com/" target="_blank">
+                <img src="./asset/imgs/dmca.png" alt="DMCA" />
+              </a>
+
+              <a
+                href="http://online.gov.vn/Home/WebDetails/138269"
+                target="_blank"
+              >
+                <img
+                  src="https://f8.edu.vn/assets/bo-cong-thuong-DpFUhjUM.png"
+                  alt="Bộ Công Thương"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h2 class="footer-heading">Về F8</h2>
+
+            <ul class="footer-list">
+              <li><a href="/about-us">Giới thiệu</a></li>
+              <li><a href="/contact">Liên hệ</a></li>
+              <li>
+                <a href="/policies"> Điều khoản & Quy định </a>
+              </li>
+              <li>
+                <a href="/information-security-policy"> Chính sách bảo mật </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2 class="footer-heading">Hỗ trợ</h2>
+
+            <ul class="footer-list">
+              <li>
+                <a href="/payment-policy"> Chính sách thanh toán </a>
+              </li>
+              <li>
+                <a href="/shipping-policy"> Chính sách vận chuyển </a>
+              </li>
+              <li>
+                <a href="/inspection-policy"> Chính sách kiểm hàng </a>
+              </li>
+              <li>
+                <a href="/pricing-information"> Quy định về giá </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h2 class="footer-heading">Công cụ</h2>
+
+            <ul class="footer-list">
+              <li>
+                <a href="https://cv.f8.edu.vn/" target="_blank">
+                  Tạo CV xin việc
+                </a>
+              </li>
+              <li>
+                <a href="/links"> Rút gọn liên kết </a>
+              </li>
+              <li>
+                <a href="https://clippy.f8.edu.vn/" target="_blank">
+                  Clip-path maker
+                </a>
+              </li>
+              <li>
+                <a href="https://snippet-generator.f8.edu.vn/" target="_blank">
+                  Snippet generator
+                </a>
+              </li>
+              <li>
+                <a href="https://grid.f8.edu.vn/" target="_blank">
+                  CSS Grid generator
+                </a>
+              </li>
+              <li>
+                <a href="https://botayra.f8.edu.vn/" target="_blank">
+                  Cảnh báo sờ tay lên mặt
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column footer-company">
+            <h2 class="footer-heading">
+              <a
+                href="https://www.google.com/search?q=CÔNG+TY+CỔ+PHẦN+CÔNG+NGHỆ+GIÁO+DỤC+F8"
+                target="_blank"
+              >
+                CÔNG TY CỔ PHẦN CÔNG NGHỆ GIÁO DỤC F8
+              </a>
+            </h2>
+
+            <ul class="footer-list">
+              <li>
+                <b>Địa chỉ:</b>
+                Tầng 4, Tòa nhà Anh Minh, số 36 Hoàng Cầu, Thành phố Hà Nội
+              </li>
+
+              <li>
+                <b>Mã số doanh nghiệp:</b>
+                0109922901 do Chi cục Thuế Quận Đống Đa, Cục Thuế TP. Hà Nội cấp
+                ngày 04/03/2022
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            © 2018 - 2026 F8. Nền tảng học lập trình hàng đầu Việt Nam.
+          </p>
+
+          <div class="footer-social">
+            <a
+              href="https://www.youtube.com/@f8vnofficial"
+              target="_blank"
+              title="F8 trên Youtube"
+            >
+              <i class="fa-brands fa-square-youtube"></i>
+            </a>
+
+            <a
+              href="https://www.facebook.com/f8vnofficial"
+              target="_blank"
+              title="F8 trên Facebook"
+            >
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@f8hoclaptrinh"
+              target="_blank"
+              title="F8 trên Tiktok"
+            >
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,414 @@
+.assignment-main {
+    flex: 1;
+    min-width: 0;
+    margin-left: 60px;
+
+    
+    padding: 40px 60px 60px;
+}
+
+
+.assignment-header {
+    width: 100%;
+}
+
+.assignment-header > h1 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: 1000;
+    color: #292929;
+}
+
+.assignment-header > p {
+    margin: 42px 0 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+
+.breadcrumb {
+    margin-top: 38px;
+}
+
+.breadcrumb ol {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.breadcrumb li {
+    color: #292929;
+}
+
+.breadcrumb li + li::before {
+    content: "/";
+    margin-right: 12px;
+    color: #999;
+}
+
+.breadcrumb a {
+    color: #292929;
+    text-decoration: none;
+}
+
+
+.assignment-search {
+    width: 510px;
+    height: 54px;
+
+    margin-top: 22px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 0 18px;
+
+    border: 1px solid #ddd;
+    border-radius: 14px;
+
+    background: #fff;
+
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.assignment-search:focus-within {
+    border-color: #aaa;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.04);
+}
+
+.assignment-search i {
+    color: #777;
+    font-size: 16px;
+}
+
+.assignment-search input {
+    width: 100%;
+    min-width: 0;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 15px;
+    color: #333;
+}
+
+.assignment-search input::placeholder {
+    color: #888;
+}
+
+
+.assignment-filters {
+    display: flex;
+    align-items: center;
+
+    margin-top: 25px;
+
+    width: 100%;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.assignment-filters button {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    height: 52px;
+
+    padding: 0 16px;
+
+    border: none;
+    background: transparent;
+
+    color: #666;
+
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: color 0.2s ease;
+}
+
+.assignment-filters button i {
+    color: #a5abb0;
+    font-size: 14px;
+}
+
+.assignment-filters button:hover {
+    color: #292929;
+}
+
+.assignment-filters button.active {
+    color: #292929;
+}
+
+.assignment-filters button.active i {
+    color: #292929;
+}
+
+
+
+.assignment-filters button.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: -1px;
+
+    height: 2px;
+
+    background: #1473e6;
+}
+
+
+
+.assignment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    margin-top: 30px;
+}
+
+
+
+
+.assignment-card {
+    position: relative;
+
+    width: 100%;
+    min-height: 158px;
+
+    padding: 28px 24px 24px;
+
+    background: #fff;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+
+    transition:
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.assignment-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+
+
+
+.assignment-card.pending-card {
+    border-color: #f4b9a7;
+}
+
+
+
+
+.assignment-status {
+    position: absolute;
+
+    top: 18px;
+    right: 20px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 5px 10px;
+
+    border-radius: 999px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.assignment-status i {
+    font-size: 12px;
+}
+
+
+
+.assignment-status.pending {
+    background-color: #fff3df;
+    color: #292929;
+}
+
+
+
+
+.assignment-status.submitted {
+    background-color: #e7f3fc;
+    color: #2698df;
+}
+
+
+
+.assignment-status.graded {
+    background-color: #e7f5ef;
+    color: #1d2a24;
+}
+
+
+
+
+.assignment-body {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    min-height: 105px;
+}
+
+
+
+.assignment-card .assignment-title {
+    margin: 0;
+
+    padding-right: 180px;
+
+    font-size: 23px;
+    line-height: 1.4;
+    font-weight: 700;
+
+    color: #292929;
+}
+
+.assignment-card .assignment-title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.assignment-card .assignment-title a:hover {
+    color: #f05629;
+}
+
+
+
+
+.assignment-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin-top: auto;
+    padding-top: 22px;
+}
+
+
+
+.assignment-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #777;
+
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.assignment-class {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 5px 12px;
+
+    border-radius: 7px;
+
+    background-color: #fde9e3;
+    color: #f05225;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.assignment-dot {
+    color: #777;
+    font-size: 18px;
+}
+
+.assignment-due,
+.assignment-date {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #777;
+}
+
+.assignment-due i,
+.assignment-date i {
+    font-size: 14px;
+}
+
+.assignment-due.warning {
+    color: #777;
+}
+
+
+
+
+.assignment-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    min-width: 148px;
+    height: 48px;
+
+    padding: 0 16px;
+
+    border: 1px solid #f5c5b7;
+    border-radius: 9px;
+
+    background-color: #fff1ed;
+    color: #d94b25;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.assignment-button i {
+    font-size: 14px;
+}
+
+.assignment-button:hover {
+    background-color: #ffe5de;
+    transform: translateX(2px);
+}
