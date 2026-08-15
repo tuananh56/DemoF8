@@ -2,8 +2,7 @@
     flex: 1;
     min-width: 0;
     margin-left: 60px;
-
-    
+    width: calc(100% - 60px);
     padding: 40px 60px 60px;
 }
 
@@ -198,8 +197,8 @@
 .assignment-card {
     position: relative;
 
-    width: 100%;
-    min-height: 158px;
+    width: auto;
+    min-height: 100;
 
     padding: 28px 24px 24px;
 
@@ -293,7 +292,7 @@
 
     padding-right: 180px;
 
-    font-size: 23px;
+    font-size: 18px;
     line-height: 1.4;
     font-weight: 700;
 
@@ -347,7 +346,7 @@
     background-color: #fde9e3;
     color: #f05225;
 
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
 }
 
@@ -361,7 +360,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
-
+    font-size: 12px;
     color: #777;
 }
 
@@ -396,19 +395,26 @@
 
     text-decoration: none;
 
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 700;
 
     transition:
-        background-color 0.2s ease,
-        transform 0.2s ease;
+        background-color 0.25s ease,
+        transform 0.25s ease,
+        opacity 0.25s ease;
 }
 
-.assignment-button i {
+.assignment-button button {
     font-size: 14px;
 }
 
 .assignment-button:hover {
     background-color: #ffe5de;
     transform: translateX(2px);
+    opacity: 0.9;
+}
+.score{
+    background-color: #E9F7EF;
+    color:gray;
+    font-size: 12px;
 }
