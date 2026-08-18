@@ -18,6 +18,16 @@
       href="https://files.fullstack.edu.vn/f8-prod/organization-logos/694743c405102.png"
     />
     <title>F8-HỌC LẬP TRÌNH ĐỂ ĐI LÀM</title>
+      <style>
+    :root {
+      --google-gradient: conic-gradient(
+        #ea4335 0deg 90deg,
+        #4285f4 90deg 180deg,
+        #34a853 180deg 270deg,
+        #fbbc04 270deg 360deg
+      );
+    }
+  </style>
   </head>
   <body>
     <header class="top-0 right-0 left-0 z-50 fixed flex items-center bg-white px-7 h-[66px]" >
@@ -55,11 +65,13 @@
         <button type="button" class="flex items-center bg-transparent p-0 border-0 w-8 h-8 text-[#555] text-[20[x] cursor-pointer">
           <i class="fa-duotone fa-solid fa-bell"></i>
         </button>
-        <button type="button" class="p-0 border-0 rounded-full w-9 h-9 overflow-hidden cursor-pointer">
-          <img
+        <button type="button" class="p-[2px] rounded-full w-9 h-9 overflow-hidden cursor-pointer" style="background: var(--google-gradient);">
+          <div class="bg-white p-[1.5px] rounded-full w-full h-full">
+             <img
             src="https://files.f8.edu.vn/f8-prod/avatars/6a6d8718342fd.jpg"
-            alt="ho tuananh" class="block w-full h-full object-cover"
+            alt="ho tuananh" class="block rounded-full w-full h-full object-cover"
           />
+          </div>
         </button>
       </div>
     </header>
@@ -117,12 +129,12 @@
             <div class="overflow-hidden">
               <div class="flex gap-4">
                 <button class="group w-[120px] text-left shrink-0">
-                  <div class="relative bg-gray-200 rounded-xl w-[120px] h-[180px] overflow-hidden">
+                  <div class="relative bg-gray-200 p-3 rounded-xl w-[120px] h-[180px]">
                     <img
                       src="https://files.f8.edu.vn/f8-prod/avatars/6a6d8718342fd.jpg"
                       alt="Avatar" class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
                     />
-
+                    
                     <div class="bottom-0 left-1/2 absolute flex justify-center items-center bg-orange-400 shadow rounded-full w-9 h-9 text-white -translate-x-1/2 -translate-y-1/2">
                       <i class="fa-solid fa-plus"></i>
                     </div>
