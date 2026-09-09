@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập JavaScript</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="bg-gray-100 px-4 py-10 min-h-screen">
+      <div class="mx-auto max-w-2xl">
+        <!-- Tiêu đề -->
+        <div class="mb-8 text-center">
+          <h1 class="font-bold text-gray-800 text-3xl">Bài tập JavaScript</h1>
+          <p class="mt-2 text-gray-500">Luyện tập xử lý số và chuỗi</p>
+        </div>
+
+        <!-- Bài 1 -->
+        <div class="bg-white shadow-md mb-6 p-6 rounded-2xl">
+          <h2 class="mb-4 font-bold text-gray-800 text-xl">
+            Bài 1: Kiểm tra số nguyên tố
+          </h2>
+
+          <div class="flex gap-3">
+            <input
+              type="number"
+              id="numberInput"
+              placeholder="Nhập n"
+              class="flex-1 px-4 py-3 border border-gray-300 focus:border-blue-500 rounded-lg outline-none focus:ring-2 focus:ring-blue-200 transition"
+            />
+
+            <button
+              onclick="checkPrime()"
+              class="bg-blue-600 hover:bg-blue-700 px-5 py-3 rounded-lg w-40 font-medium text-white transition"
+            >
+              Kiểm tra
+            </button>
+          </div>
+
+          <p
+            id="primeResult"
+            class="flex justify-center items-center gap-2 bg-blue-50 shadow-sm mt-4 px-5 py-4 border border-blue-200 rounded-xl font-semibold text-blue-700"
+          >
+            Kết quả sẽ hiển thị ở đây
+          </p>
+        </div>
+
+        <!-- Bài 2 -->
+        <div class="bg-white shadow-md mb-6 p-6 rounded-2xl">
+          <h2 class="mb-4 font-bold text-gray-800 text-xl">
+            Bài 2: Chuẩn hóa tên người dùng
+          </h2>
+
+          <div class="flex gap-3">
+            <input
+              type="text"
+              id="nameInput"
+              placeholder="Nhập họ tên"
+              class="flex-1 px-4 py-3 border border-gray-300 focus:border-blue-500 rounded-lg outline-none focus:ring-2 focus:ring-green-200 transition"
+            />
+
+            <button
+              onclick="formatName()"
+              class="bg-blue-600 hover:bg-blue-700 px-5 py-3 rounded-lg w-40 font-medium text-white transition"
+            >
+              Chuẩn hóa
+            </button>
+          </div>
+
+          <p
+            id="nameResult"
+            class="flex justify-center items-center gap-2 bg-blue-50 shadow-sm mt-4 px-5 py-4 border border-blue-200 rounded-xl font-semibold text-blue-700"
+          >
+            Kết quả sẽ hiển thị ở đây
+          </p>
+        </div>
+
+        <!-- Bài 3 -->
+        <div class="bg-white shadow-md mb-6 p-6 rounded-2xl">
+          <h2 class="mb-4 font-bold text-gray-800 text-xl">
+            Bài 3: Che thông tin email
+          </h2>
+
+          <div class="flex gap-3">
+            <input
+              type="text"
+              id="emailInput"
+              placeholder="Nhập email"
+              class="flex-1 px-4 py-3 border border-gray-300 focus:border-blue-500 rounded-lg outline-none focus:ring-2 focus:ring-blue-200 transition"
+            />
+
+            <button
+              onclick="hideEmail()"
+              class="bg-blue-600 hover:bg-blue-700 px-5 py-3 rounded-lg w-40 font-medium text-white transition"
+            >
+              Che thông tin
+            </button>
+          </div>
+
+         <p
+            id="emailResult"
+            class="flex justify-center items-center gap-2 bg-blue-50 shadow-sm mt-4 px-5 py-4 border border-blue-200 rounded-xl font-semibold text-blue-700"
+          >
+            Kết quả sẽ hiển thị ở đây
+          </p>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
