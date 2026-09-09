@@ -1,83 +1,264 @@
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f0fdf4;
-  color: #292929;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+  min-height: 100vh;
 }
+
+/* Container */
 
 .container {
-  max-width: 1100px;
-  margin: 50px auto;
-  padding: 0 20px;
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px 20px;
 }
 
-.container > h1 {
-  text-align: center;
-  margin: 0 0 30px;
-  color: #16a34a;
+/* Header */
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  margin-bottom: 35px;
+  padding: 28px;
+
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
 }
+
+.header-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 65px;
+  height: 65px;
+
+  flex-shrink: 0;
+
+  background: #2563eb;
+  color: white;
+
+  border-radius: 16px;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.header h1 {
+  margin-bottom: 6px;
+
+  color: #111827;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.header p {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* Danh sách Day */
 
 .week-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-
-  /* Giới hạn chiều cao */
-  max-height: 600px;
-
-  /* Cho phép cuộn dọc */
-  overflow-y: auto;
-
-  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
+/* Card */
+
 .week {
- min-height: 300px;
-  background: #ffffff;
-  padding: 25px;
+  padding: 24px;
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
   border-radius: 16px;
-  border: 1px solid #16a34a;
-  border-left: 5px solid #16a34a;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.week:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-color: #93c5fd;
+}
+
+/* Header của Day */
+
+.week-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+
+  margin-bottom: 20px;
+}
+
+.day-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 70px;
+  height: 45px;
+
+  background: #eff6ff;
+  color: #2563eb;
+
+  border-radius: 10px;
+
+  font-size: 15px;
+  font-weight: 700;
 }
 
 .week h2 {
-  margin: 0 0 20px;
-  font-size: 24px;
-  color: #2563eb;
+  margin-bottom: 6px;
+
+  color: #111827;
+  font-size: 19px;
 }
+
+.week-header p {
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Exercise */
 
 .exercise-list {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
-
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
 .exercise {
-  display: block;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-  background: #f0fdf4;
-  border: 1px solid #16a34a;
+  padding: 13px 15px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e5e7eb;
   border-radius: 10px;
 
-  color: #292929;
+  color: #374151;
   text-decoration: none;
+
+  font-size: 14px;
   font-weight: 600;
 
-  transition: all 0.3s ease;
+  transition: background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .exercise:hover {
-  background: #16a34a;
-  color: #ffffff;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(22, 163, 74, 0.2);
+  background: #eff6ff;
+  border-color: #93c5fd;
+  color: #2563eb;
+
+  transform: translateX(3px);
+}
+
+.arrow {
+  color: #9ca3af;
+  font-size: 18px;
+
+  transition: transform 0.2s ease;
+}
+
+.exercise:hover .arrow {
+  color: #2563eb;
+  transform: translateX(3px);
+}
+
+/* Footer */
+
+footer {
+  margin-top: 35px;
+
+  text-align: center;
+
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+  .container {
+    padding: 30px 15px;
+  }
+
+  .header {
+    padding: 22px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .week {
+    padding: 20px;
+  }
+
+  .exercise-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-icon {
+    width: 52px;
+    height: 52px;
+
+    border-radius: 12px;
+
+    font-size: 16px;
+  }
+
+  .header h1 {
+    font-size: 21px;
+  }
+
+  .header p {
+    font-size: 13px;
+  }
+
+  .week-header {
+    gap: 12px;
+  }
+
+  .day-number {
+    min-width: 58px;
+    height: 40px;
+
+    font-size: 12px;
+  }
+
+  .week h2 {
+    font-size: 17px;
+  }
 }

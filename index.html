@@ -3,89 +3,186 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="style.css" />
-    <title>Demo</title>
+
+    <title>Danh sách bài tập</title>
   </head>
-  <!doctype html>
-  <html lang="vi">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="style.css" />
-      <title>Demo</title>
-    </head>
 
-    <body>
-      <div class="container">
-        <h1>Danh Sách Bài Tập</h1>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-icon">JS</div>
 
-        <div class="week-list">
-          <section class="week">
-            <h2 class="title">Bài tập buổi 2+3</h2>
-            <ul class="exercise-list">
-              <li>
-                <a href="./d2+d3/k22-d2-b1.html" class="exercise">
-                  Bài tập 1
-                </a>
-              </li>
-              <li>
-                <a href="./d2+d3/news.html" class="exercise"> Bài tập 2 </a>
-              </li>
-              <li>
-                <a href="./d2+d3/contact.html" class="exercise"> Bài tập 3 </a>
-              </li>
-            </ul>
-          </section>
-
-          <section class="week">
-            <h2 class="title">Bài tập buổi 4</h2>
-            <ul class="exercise-list">
-              <li>
-                <a href="./d4/blog.html" class="exercise"> Bài tập 1 </a>
-              </li>
-              <li>
-                <a href="./d4/user.html" class="exercise"> Bài tập 2 </a>
-              </li>
-            </ul>
-          </section>
-
-          <section class="week">
-            <h2 class="title">Bài tập buổi 5</h2>
-            <ul class="exercise-list">
-              <li>
-                <a href="./d5/index.html" class="exercise"> Trang home </a>
-              </li>
-            </ul>
-          </section>
-
-          <section class="week">
-            <h2 class="title">Bài tập buổi 6</h2>
-            <ul class="exercise-list">
-              <li>
-                <a href="./d5/assignment-classes.html" class="exercise">
-                  Trang bài tập
-                </a>
-              </li>
-              <li>
-                <a href="./d5/discussions.html" class="exercise">
-                  Trang hỏi đáp
-                </a>
-              </li>
-            </ul>
-          </section>
-
-          <section class="week">
-            <h2 class="title">Bài tập buổi 7: Tailwind</h2>
-            <ul class="exercise-list">
-              <li>
-                <a href="./d7_tailwind/index.html" class="exercise">
-                  Trang Home Tailwind
-                </a>
-              </li>
-            </ul>
-          </section>
+        <div>
+          <h1>Danh Sách Bài Tập</h1>
+          <p>F8 - Lộ trình học Frontend & JavaScript</p>
         </div>
-      </div>
-    </body>
-  </html>
+      </header>
+
+      <!-- Danh sách bài -->
+      <main class="week-list">
+        <!-- Day 2 + 3 -->
+        <section class="week">
+          <div class="week-header">
+            <span class="day-number">02+03</span>
+
+            <div>
+              <h2>HTML & CSS cơ bản</h2>
+              <p>
+                Syntax, Semantic, Entity, Tag types, Link, Media, Form, Table và
+                Selector CSS
+              </p>
+            </div>
+          </div>
+
+          <div class="exercise-list">
+            <a href="./d2+d3/k22-d2-b1.html" class="exercise">
+              <span>Bài tập 1</span>
+              <span class="arrow">→</span>
+            </a>
+
+            <a href="./d2+d3/news.html" class="exercise">
+              <span>Bài tập 2</span>
+              <span class="arrow">→</span>
+            </a>
+
+            <a href="./d2+d3/contact.html" class="exercise">
+              <span>Bài tập 3</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- Day 4 -->
+        <section class="week">
+          <div class="week-header">
+            <span class="day-number">04</span>
+
+            <div>
+              <h2>CSS nền tảng</h2>
+              <p>Selector, Inheritance, Specificity, Unit, Reset và Layout</p>
+            </div>
+          </div>
+
+          <div class="exercise-list">
+            <a href="./d4/blog.html" class="exercise">
+              <span>Bài tập 1</span>
+              <span class="arrow">→</span>
+            </a>
+
+            <a href="./d4/user.html" class="exercise">
+              <span>Bài tập 2</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- Day 5 -->
+        <section class="week">
+          <div class="week-header">
+            <span class="day-number">05</span>
+
+            <div>
+              <h2>Layout CSS</h2>
+              <p>Flexbox, Position, Grid, Z-index và Typography</p>
+            </div>
+          </div>
+
+          <div class="exercise-list">
+            <a href="./d5/index.html" class="exercise">
+              <span>Trang Home</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- Day 6 -->
+        <section class="week">
+          <div class="week-header">
+            <span class="day-number">06</span>
+
+            <div>
+              <h2>CSS nâng cao</h2>
+              <p>Background, Effect, Transform, Transition và Animation</p>
+            </div>
+          </div>
+
+          <div class="exercise-list">
+            <a href="./d5/assignment-classes.html" class="exercise">
+              <span>Trang bài tập</span>
+              <span class="arrow">→</span>
+            </a>
+
+            <a href="./d5/discussions.html" class="exercise">
+              <span>Trang hỏi đáp</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- Day 7 -->
+        <section class="week">
+          <div class="week-header">
+            <span class="day-number">07</span>
+
+            <div>
+              <h2>Tailwind CSS</h2>
+              <p>Làm quen với Utility-first CSS và xây dựng giao diện</p>
+            </div>
+          </div>
+
+          <div class="exercise-list">
+            <a href="./d7_tailwind/index.html" class="exercise">
+              <span>Trang Home Tailwind</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- Day 9 -->
+        <section class="week">
+          <div class="week-header">
+            <span class="day-number">09</span>
+
+            <div>
+              <h2>JavaScript cơ bản</h2>
+              <p>Biến, kiểu dữ liệu, toán tử và câu lệnh rẽ nhánh</p>
+            </div>
+          </div>
+
+          <div class="exercise-list">
+            <a href="./d9/index.html" class="exercise">
+              <span>Trang bài tập JavaScript</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- Day 10 -->
+        <section class="week">
+          <div class="week-header">
+            <span class="day-number">10</span>
+
+            <div>
+              <h2>JavaScript nâng cao</h2>
+              <p>Loops, String và Number trong JavaScript</p>
+            </div>
+          </div>
+
+          <div class="exercise-list">
+            <a href="./d10/index.html" class="exercise">
+              <span>Trang bài tập JavaScript</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>F8 Learning Journey • HTML • CSS • JavaScript</p>
+      </footer>
+    </div>
+  </body>
 </html>
