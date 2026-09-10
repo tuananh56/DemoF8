@@ -7,7 +7,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #f4f7fb;
+  background: #d0eedb;
   color: #1f2937;
   min-height: 100vh;
 }
@@ -19,6 +19,7 @@ body {
   max-width: 950px;
   margin: 0 auto;
   padding: 50px 20px;
+  background-color: #d0eedb;
 }
 
 /* Header */
@@ -48,7 +49,7 @@ body {
 
   flex-shrink: 0;
 
-  background: #2563eb;
+  background: #f97316;
   color: white;
 
   border-radius: 16px;
@@ -99,7 +100,7 @@ body {
   transform: translateY(-2px);
 
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  border-color: #93c5fd;
+  border-color: #c4e496;
 }
 
 /* Header của Day */
@@ -121,7 +122,7 @@ body {
   height: 45px;
 
   background: #eff6ff;
-  color: #2563eb;
+  color: #40933b;
 
   border-radius: 10px;
 
@@ -176,8 +177,8 @@ body {
 
 .exercise:hover {
   background: #eff6ff;
-  border-color: #93c5fd;
-  color: #2563eb;
+  border-color: #98d9b2;
+  color: #81de9a;
 
   transform: translateX(3px);
 }
@@ -190,7 +191,7 @@ body {
 }
 
 .exercise:hover .arrow {
-  color: #2563eb;
+  color: #81de9a;
   transform: translateX(3px);
 }
 
