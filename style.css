@@ -27,6 +27,7 @@ body {
 .header {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 18px;
 
   margin-bottom: 35px;
@@ -204,6 +205,43 @@ footer {
 
   color: #9ca3af;
   font-size: 13px;
+}
+
+.search-box {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.search-box input {
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.page-btn {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: 1px solid #61df61;
+  border-radius: 6px;
+  background: #f8fafc;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.page-btn:hover {
+  background: #eff6ff;
+  border-color: #ee6f0e;
+}
+
+.page-btn.active {
+  background: #10cf5d;
+  color: white;
+  border-color: #49c376;
 }
 
 /* Responsive */
