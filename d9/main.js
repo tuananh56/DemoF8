@@ -89,25 +89,6 @@ function tinhCuocTaxi(soKm) {
     return tienCuoc;
 }
 
-function tinhCuocTaxi(soKm) {
-    let tienCuoc;
-
-    if (soKm <= 1) {
-        tienCuoc = 15000;
-    } else if (soKm <= 5) {
-        tienCuoc = 15000 + (soKm - 1) * 13500;
-    } else {
-        tienCuoc = 15000 + 4 * 13500 + (soKm - 5) * 11000;
-    }
-
-    // Đi trên 12 km được giảm 10%
-    if (soKm > 12) {
-        tienCuoc = tienCuoc * 0.9;
-    }
-
-    return tienCuoc;
-}
-
 function xuLyBai3() {
     const soKm = Number(document.getElementById("soKm").value);
     const ketQua = document.getElementById("ketQuaBai3");
