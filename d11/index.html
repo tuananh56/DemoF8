@@ -11,7 +11,10 @@
     </h1>
 
     <div class="flex justify-center">
-      <div id="invoice" class="bg-white shadow-lg p-6 rounded-lg w-full max-w-2xl"></div>
+      <div
+        id="invoice"
+        class="bg-white shadow-lg p-6 rounded-lg w-full max-w-2xl"
+      ></div>
     </div>
 
     <script src="main.js"></script>
@@ -19,37 +22,43 @@
       const invoice = document.getElementById("invoice");
 
       // Tạo danh sách sản phẩm
-      let itemsHTML = cart.items.map(item => `
+      let itemsHTML = cart.items
+        .map(
+          (item) => `
         <tr>
           <td class="px-4 py-2 border">${item.name}</td>
           <td class="px-4 py-2 border">${item.price.toLocaleString()} VND</td>
           <td class="px-4 py-2 border">${item.quantity}</td>
           <td class="px-4 py-2 border">${(item.price * item.quantity).toLocaleString()} VND</td>
         </tr>
-      `).join("");
+      `,
+        )
+        .join("");
 
       // Render bảng hóa đơn
       invoice.innerHTML = `
-        <table class="mb-4 w-full border-collapse">
-          <thead class="bg-green-700 text-white">
-            <tr>
-              <th class="px-4 py-2 text-left">Sản phẩm</th>
-              <th class="px-4 py-2 text-left">Đơn giá</th>
-              <th class="px-4 py-2 text-left">Số lượng</th>
-              <th class="px-4 py-2 text-left">Thành tiền</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${itemsHTML}
-          </tbody>
-        </table>
+  <div class="bg-white shadow-lg rounded-2xl overflow-hidden">
+    <table class="mb-4 w-full border-collapse">
+      <thead class="bg-green-700 text-white">
+        <tr>
+          <th class="px-4 py-2 text-left">Sản phẩm</th>
+          <th class="px-4 py-2 text-left">Đơn giá</th>
+          <th class="px-4 py-2 text-left">Số lượng</th>
+          <th class="px-4 py-2 text-left">Thành tiền</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${itemsHTML}
+      </tbody>
+    </table>
 
-        <div class="space-y-2 text-right">
-          <p class="text-gray-700">Tổng tiền hàng: <span class="font-semibold">${cart.subtotal.toLocaleString()} VND</span></p>
-          <p class="text-gray-700">Giảm giá: <span class="font-semibold text-red-600">${cart._discountRate * 100}% (-${(cart.subtotal * cart._discountRate).toLocaleString()} VND)</span></p>
-          <p class="font-bold text-gray-800 text-lg">Tổng thanh toán: <span class="text-green-600">${cart.totalPrice.toLocaleString()} VND</span></p>
-        </div>
-      `;
+    <div class="space-y-2 p-4 text-right">
+      <p class="text-gray-700">Tổng tiền hàng: <span class="font-semibold">${cart.subtotal.toLocaleString()} VND</span></p>
+      <p class="text-gray-700">Giảm giá: <span class="font-semibold text-red-600">${cart._discountRate * 100}% (-${(cart.subtotal * cart._discountRate).toLocaleString()} VND)</span></p>
+      <p class="font-bold text-gray-800 text-lg">Tổng thanh toán: <span class="text-green-600">${cart.totalPrice.toLocaleString()} VND</span></p>
+    </div>
+  </div>
+`;
     </script>
   </body>
 </html>
