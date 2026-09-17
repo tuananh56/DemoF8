@@ -119,11 +119,42 @@ console.log(searchProduct2);
 //         }
 //     }
 // }}
-const name=["Hồ", "Tuấn", "Anh", "Huy"];
-const name2=[1,2,10,20];
+const name = ["Hồ", "Tuấn", "Anh", "Huy"];
+const name2 = [1, 2, 10, 20];
 console.log(name.sort());
-console.log(name2.sort((a,b)=>a-b)); //tăng dần
-console.log(name2.sort((a,b)=>b-a)); //giảm dần
+console.log(name2.sort((a, b) => a - b)); //tăng dần
+console.log(name2.sort((a, b) => b - a)); //giảm dần
 
 //tách, nối, copy
-const name3=[1,2,3,4,5,6,7,8,9,10];
+const name3 = [1, 2, 3, 4, 5];
+console.log(name3.slice(-3, -1)); //tách
+
+const name4 = [6, 7, 8, 9, 10];
+console.log(name3.concat(name4)); //nối
+// console.log(name4);
+console.log([...name3, ...name4]);
+
+//mảng -> chuỗi
+const name5 = ["Hồ", "Tuấn", "Anh", "Huy"];
+console.log(name5.join("+"));
+
+//chuỗi ->mảng
+const name6 = "Hồ+Tuấn+Anh+Huy";
+const nameArray = name6.split("+");
+console.log(nameArray);
+
+//Destructuring
+const user = ["Hồ", 25, "Tp HCM"];
+
+//C1
+const name7 = user[0];
+const age = user[1];
+console.log(name7, age);
+
+//C2 Destructuring
+const [name8,_, address] = user;
+console.log(name8, address);
+
+const name9 = ["Hồ", "Hiếu", "Trọng", "Hoàng"];
+const longName=name9.filter((name)=>name.length>=5);
+console.log(longName);
