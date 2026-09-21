@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Demo Functions - Employee & Time</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  </head>
+  <body class="bg-gray-100 p-8 min-h-screen">
+    <div class="bg-white shadow-lg mx-auto p-6 rounded-lg max-w-3xl">
+      <h1 class="mb-6 font-bold text-blue-600 text-2xl">
+        Demo các function trong main.js
+      </h1>
+
+      <!-- Bài 1 -->
+      <h2 class="mb-2 font-semibold text-xl">Bài 1 - Employee</h2>
+      <button
+        onclick="showTotalSalary()"
+        class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded text-white"
+      >
+        Tính tổng lương
+      </button>
+      <div id="salaryOutput" class="bg-gray-50 mt-3 p-3 border rounded"></div>
+
+      <!-- Bài 2 -->
+      <h2 class="mt-6 mb-2 font-semibold text-xl">Bài 2 - Time Functions</h2>
+      <div class="space-x-2">
+        <button
+          onclick="showTimeAgo()"
+          class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded text-white"
+        >
+          Test timeAgo()
+        </button>
+        <button
+          onclick="startCountdownDemo()"
+          class="bg-purple-500 hover:bg-purple-600 px-4 py-2 rounded text-white"
+        >
+          Test Countdown 5s
+        </button>
+        <button
+          onclick="checkWeekend()"
+          class="bg-pink-500 hover:bg-pink-600 px-4 py-2 rounded text-white"
+        >
+          Kiểm tra isWeekend()
+        </button>
+      </div>
+
+      <div id="timeAgoOutput" class="bg-gray-50 mt-3 p-3 border rounded"></div>
+      <div
+        id="countdownOutput"
+        class="bg-gray-50 mt-3 p-3 border rounded"
+      ></div>
+      <div id="weekendOutput" class="bg-gray-50 mt-3 p-3 border rounded"></div>
+    </div>
+
+    <!-- logic xử lý  -->
+    <script src="main.js"></script>
+    <!--lấy dữ liệu từ main -> hiển thị lên trình duyệt-->
+    <script src="app.js"></script>
+  </body>
+</html>
