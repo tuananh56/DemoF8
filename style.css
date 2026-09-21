@@ -211,11 +211,31 @@ footer {
   margin-bottom: 20px;
   text-align: center;
 }
+
 .search-box input {
   padding: 10px;
   width: 80%;
   border: 1px solid #ccc;
   border-radius: 8px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+/* Khi focus vào input */
+.search-box input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 8px #4caf50;
+  outline: none;
+}
+
+/* Hiệu ứng text khi gõ */
+@keyframes typingEffect {
+  from { color: #333; }
+  to { color: #ebac0e; }
+}
+
+.search-box input:focus {
+  animation: typingEffect 1s ease infinite alternate;
 }
 
 #pagination {

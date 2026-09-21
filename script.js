@@ -43,36 +43,47 @@ function setupPagination() {
     pagination.appendChild(btn);
   }
 }
-// searchInput.addEventListener("keyup", function () {
-//   const keyword = this.value.toLowerCase();
-//   filteredWeeks = [];
 
-//   allWeeks.forEach((week) => {
-//     const header = week.querySelector(".week-header");
-//     const day = header.querySelector(".day-number").innerText.toLowerCase();
-//     const title = header.querySelector("h2").innerText.toLowerCase();
-//     const desc = header.querySelector("p").innerText.toLowerCase();
+let typingTimer;
+const typingDelay = 500;
 
-//     const exercises = week.querySelectorAll(".exercise");
-//     const matchExercise = Array.from(exercises).some(ex =>
-//       ex.innerText.toLowerCase().includes(keyword)
-//     );
+searchInput.addEventListener("keyup", function () {
+  const keyword = this.value.toLowerCase().trim();
+  const keywords = keyword.split(/\s+/);
+  filteredWeeks = [];
 
-//     if (
-//       day.includes(keyword) ||
-//       title.includes(keyword) ||
-//       desc.includes(keyword) ||
-//       matchExercise
-//     ) {
-//       filteredWeeks.push(week);
-//     }
-//   });
+  allWeeks.forEach((week) => {
+    const day =
+      week.querySelector(".day-number")?.innerText.toLowerCase() || "";
+    const title =
+      week.querySelector(".week-title")?.innerText.toLowerCase() || "";
+    const desc =
+      week.querySelector(".week-desc")?.innerText.toLowerCase() || "";
+    const exercises = week.querySelectorAll(".exercise");
+    const exerciseText = Array.from(exercises)
+      .map((ex) => ex.innerText.toLowerCase())
+      .join(" ");
 
-//   currentPage = 1;
-//   setupPagination();
-//   renderPage(currentPage);
-// });
+    const combinedText = `${day} ${title} ${desc} ${exerciseText}`;
+    const match = keywords.every((k) => combinedText.includes(k));
 
+    if (match) filteredWeeks.push(week);
+  });
 
+  const container = document.querySelector(".week-list");
+  const searchBox = container.querySelector(".search-box");
+
+  // chỉ xoá các week, không xoá search-box
+  container.querySelectorAll(".week").forEach((week) => week.remove());
+
+  // giữ nguyên search-box, không cần innerHTML = ""
+  filteredWeeks.forEach((week) => container.appendChild(week));
+
+  currentPage = 1;
+  setupPagination();
+  renderPage(currentPage);
+});
+
+// Khởi tạo ban đầu
 setupPagination();
 renderPage(currentPage);
