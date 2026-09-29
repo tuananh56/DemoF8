@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bài tập tổng hợp với TailwindCSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+  </head>
+  <body
+    class="flex flex-col justify-center items-center space-y-16 bg-gray-50 dark:bg-gray-900 min-h-screen text-gray-800 dark:text-gray-100 transition-colors duration-500"
+  >
+    <!-- Bài 1: Đổi theme Sáng/Tối với Toggle Switch -->
+    <section class="text-center">
+      <div
+        id="toggleTheme"
+        class="relative flex items-center bg-gray-300 dark:bg-gray-700 rounded-full w-24 h-12 transition-colors duration-300 cursor-pointer"
+      >
+        <!-- Thumb -->
+        <div
+          id="thumb"
+          class="left-1 absolute flex justify-center items-center bg-white shadow-md rounded-full w-10 h-10 transition-all duration-300"
+        >
+          🌞
+        </div>
+      </div>
+    </section>
+
+    <!-- Bài 2: Ẩn/Hiện mật khẩu -->
+    <section
+      class="bg-white dark:bg-gray-800 shadow-lg p-6 rounded-lg text-center"
+    >
+      <label for="password" class="mr-2 font-semibold">Mật khẩu:</label>
+
+      <div class="inline-block relative">
+        <input
+          type="password"
+          id="password"
+          class="px-3 py-2 pr-10 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
+        />
+        <button
+          id="togglePass"
+          type="button"
+          class="top-1/2 right-2 absolute text-green-300 hover:text-green-600 -translate-y-1/2"
+        >
+          <!-- icon mắt mở -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M2.458 12C3.732 7.943 7.523 5 12 5
+                 c4.477 0 8.268 2.943 9.542 7
+                 -1.274 4.057-5.065 7-9.542 7
+                 -4.477 0-8.268-2.943-9.542-7z"
+            />
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- Bài 3: Gallery sản phẩm -->
+    <section class="text-center">
+      <img
+        id="mainImage"
+        class="shadow-lg mx-auto mb-6 border border-gray-300 dark:border-gray-700 rounded-lg w-80"
+        src="imgs/mo_phat.jpg"
+        alt="Ảnh sản phẩm 1"
+      />
+      <div class="flex justify-center space-x-4">
+        <img
+          src="imgs/doi_quan.jpg"
+          alt="Ảnh sản phẩm 1"
+          class="border-2 border-red-500 rounded-lg w-24 hover:scale-105 transition-transform duration-300 cursor-pointer"
+        />
+        <img
+          src="imgs/doi_quans.jpg"
+          alt="Ảnh sản phẩm 2"
+          class="border-2 border-transparent rounded-lg w-24 hover:scale-105 transition-transform duration-300 cursor-pointer"
+        />
+        <img
+          src="imgs/omygod.jpg"
+          alt="Ảnh sản phẩm 3"
+          class="border-2 border-transparent rounded-lg w-24 hover:scale-105 transition-transform duration-300 cursor-pointer"
+        />
+         <img
+          src="imgs/smile.jpg"
+          alt="Ảnh sản phẩm 4"
+          class="border-2 border-transparent rounded-lg w-24 hover:scale-105 transition-transform duration-300 cursor-pointer"
+        />
+         <img
+          src="imgs/cay.jpg"
+          alt="Ảnh sản phẩm 5"
+          class="border-2 border-transparent rounded-lg w-24 hover:scale-105 transition-transform duration-300 cursor-pointer"
+        />
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
