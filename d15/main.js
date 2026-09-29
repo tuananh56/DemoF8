@@ -44,15 +44,28 @@ passBtn.addEventListener("click", () => {
   }
 });
 // Gallery
-const mainImage = document.getElementById("mainImage");
-const thumbnails = document.querySelectorAll("section:last-of-type .flex img");
-thumbnails.forEach((thumb) => {
-  thumb.addEventListener("click", () => {
+document.addEventListener("DOMContentLoaded", () => {
+  const mainImage = document.getElementById("mainImage");
+  const thumbnails = document.querySelectorAll("#gallery .flex img");
+  let currentIndex = 0;
+
+  function changeImage(index) {
+    const thumb = thumbnails[index];
     mainImage.src = thumb.src;
     mainImage.alt = thumb.alt;
     thumbnails.forEach((t) => t.classList.remove("border-red-500"));
-    thumbnails.forEach((t) => t.classList.remove("border-transparent"));
-    thumb.classList.remove("border-transparent");
     thumb.classList.add("border-red-500");
+  }
+
+  thumbnails.forEach((thumb, idx) => {
+    thumb.addEventListener("click", () => {
+      currentIndex = idx;
+      changeImage(currentIndex);
+    });
   });
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % thumbnails.length;
+    changeImage(currentIndex);
+  }, 2000);
 });
