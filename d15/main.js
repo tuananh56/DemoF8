@@ -67,5 +67,5 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(() => {
     currentIndex = (currentIndex + 1) % thumbnails.length;
     changeImage(currentIndex);
-  }, 2000);
+  }, 1500);
 });
