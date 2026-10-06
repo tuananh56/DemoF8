@@ -1,37 +1,45 @@
 // Trang chủ: hiển thị BOM và gắn Fingerprinting
 function loadHomeInfo() {
   const infoDiv = document.getElementById("info");
-  if (infoDiv) {
-    navigator.geolocation.getCurrentPosition((pos) => {
+  if (!infoDiv) return;
+
+  // Lấy vị trí, có fallback nếu người dùng từ chối
+  navigator.geolocation.getCurrentPosition(
+    (pos) => {
       const coords = `Lat: ${pos.coords.latitude}, Lng: ${pos.coords.longitude}`;
       renderInfo(coords);
-    });
+    },
+    () => {
+      renderInfo("Không xác định (chưa cấp quyền)");
+    },
+  );
 
-    function renderInfo(coords) {
-      const online = navigator.onLine
-        ? '<span class="inline-block w-3 h-3 rounded-full bg-green-500 mr-2"></span>Online'
-        : '<span class="inline-block w-3 h-3 rounded-full bg-red-500 mr-2"></span>Offline';
-      const data = [
-        { label: "Vị trí", value: coords },
-        { label: "Trạng thái", value: online },
-        { label: "Trình duyệt", value: navigator.userAgent },
-        { label: "Hệ điều hành", value: navigator.platform },
-        { label: "Ngôn ngữ", value: navigator.languages.join(", ") },
-        {
-          label: "Kích thước màn hình",
-          value: `${screen.width}x${screen.height}`,
-        },
-        { label: "Hướng màn hình", value: screen.orientation.type },
-      ];
-      infoDiv.innerHTML = data
-        .map(
-          (d) => `
-        <div class="p-4 bg-white rounded-lg shadow hover:shadow-md transition">
-          <strong>${d.label}:</strong> ${d.value}
-        </div>`,
-        )
-        .join("");
-    }
+  function renderInfo(coords) {
+    const online = navigator.onLine
+      ? '<span class="inline-block w-3 h-3 rounded-full bg-green-500 mr-2"></span>Online'
+      : '<span class="inline-block w-3 h-3 rounded-full bg-red-500 mr-2"></span>Offline';
+
+    const data = [
+      { label: "Vị trí", value: coords },
+      { label: "Trạng thái", value: online },
+      { label: "Trình duyệt", value: navigator.userAgent },
+      { label: "Hệ điều hành", value: navigator.platform },
+      { label: "Ngôn ngữ", value: navigator.languages.join(", ") },
+      {
+        label: "Kích thước màn hình",
+        value: `${screen.width}x${screen.height}`,
+      },
+      { label: "Hướng màn hình", value: screen.orientation.type },
+    ];
+
+    infoDiv.innerHTML = data
+      .map(
+        (d) => `
+      <div class="p-4 bg-white rounded-lg shadow hover:shadow-md transition">
+        <strong>${d.label}:</strong> ${d.value}
+      </div>`,
+      )
+      .join("");
   }
 
   // Fingerprinting navigation
