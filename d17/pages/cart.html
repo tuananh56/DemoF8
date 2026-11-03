@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shopping Cart - My Ecommerce</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script src="../js/cart.js" defer></script>
+  </head>
+
+  <body class="bg-gray-100 min-h-screen text-gray-800">
+    <!-- HEADER -->
+    <header class="bg-white shadow-sm">
+      <div
+        class="flex justify-between items-center mx-auto px-6 py-5 max-w-7xl"
+      >
+        <a href="../index.html" class="font-bold text-blue-600 text-2xl">
+          My Ecommerce
+        </a>
+
+        <a href="../index.html" class="text-gray-600 hover:text-blue-600">
+          Trang chủ
+        </a>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="mx-auto px-6 py-10 max-w-7xl">
+      <div class="mb-8">
+        <h1 class="font-bold text-3xl">Shopping Cart</h1>
+
+        <p class="mt-2 text-gray-500">Quản lý sản phẩm và giỏ hàng của bạn.</p>
+      </div>
+
+      <div class="gap-8 grid grid-cols-1 lg:grid-cols-3">
+        <!-- Danh sách sản phẩm -->
+        <section class="lg:col-span-2">
+          <h2 class="mb-5 font-bold text-xl">Danh sách sản phẩm</h2>
+          <div
+            id="productList"
+            class="gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
+          ></div>
+        </section>
+
+        <!-- Giỏ hàng -->
+        <aside class="bg-white shadow-sm p-6 rounded-xl h-fit">
+          <div class="flex justify-between items-center mb-6">
+            <h2 class="font-bold text-xl">Giỏ hàng</h2>
+            <span
+              id="cartCount"
+              class="bg-blue-100 px-3 py-1 rounded-full font-semibold text-blue-700 text-sm"
+              >0 sản phẩm</span
+            >
+          </div>
+
+          <div id="cartItems" class="space-y-4"></div>
+
+          <div id="emptyCart" class="hidden py-8 text-center">
+            <p class="mb-3 text-4xl">🛒</p>
+            <p class="text-gray-500">Giỏ hàng đang trống.</p>
+          </div>
+
+          <div class="space-y-4 mt-6 pt-5 border-t">
+            <div class="flex justify-between text-gray-600">
+              <span>Tổng số lượng:</span>
+              <span id="totalQuantity" class="font-semibold text-gray-800"
+                >0</span
+              >
+            </div>
+
+            <div class="flex justify-between font-semibold">
+              <span>Tổng tiền:</span>
+              <span id="totalPrice" class="text-blue-600 text-xl">0 ₫</span>
+
+              <a
+                href="./checkout.html"
+                class="block bg-blue-600 hover:bg-blue-700 mt-5 py-3 rounded-lg font-semibold text-white text-center"
+              >
+                Tiến hành thanh toán
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>

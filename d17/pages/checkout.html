@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toán</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/checkout.js" defer></script>
+  </head>
+
+  <body class="bg-gray-100 min-h-screen">
+    <header class="bg-white shadow-sm px-6 py-4">
+      <div class="flex justify-between items-center mx-auto max-w-6xl">
+        <h1 class="font-bold text-blue-600 text-2xl">Checkout</h1>
+        <a href="./cart.html" class="text-blue-600 hover:underline"
+          >Quay lại giỏ hàng</a
+        >
+      </div>
+    </header>
+
+    <main class="mx-auto p-6 max-w-6xl">
+      <h2 class="mb-6 font-bold text-2xl">Thông tin thanh toán</h2>
+
+      <div class="gap-8 grid grid-cols-1 lg:grid-cols-3">
+        <section class="lg:col-span-2 bg-white shadow-sm p-6 rounded-xl">
+          <h3 class="mb-5 font-bold text-xl">Thông tin khách hàng</h3>
+
+          <form id="checkoutForm" class="space-y-5">
+            <div>
+              <label for="customerName" class="block mb-2 font-medium"
+                >Họ và tên</label
+              >
+              <input
+                id="customerName"
+                type="text"
+                required
+                class="px-4 py-3 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500 w-full"
+                placeholder="Nhập họ và tên"
+              />
+            </div>
+
+            <div>
+              <label for="customerPhone" class="block mb-2 font-medium"
+                >Số điện thoại</label
+              >
+              <input
+                id="customerPhone"
+                type="tel"
+                required
+                pattern="[0-9]{10,11}"
+                class="px-4 py-3 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500 w-full"
+                placeholder="Nhập số điện thoại"
+              />
+            </div>
+
+            <div>
+              <label for="customerAddress" class="block mb-2 font-medium"
+                >Địa chỉ giao hàng</label
+              >
+              <input
+                id="customerAddress"
+                type="text"
+                required
+                class="px-4 py-3 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500 w-full"
+                placeholder="Nhập địa chỉ"
+              />
+            </div>
+
+            <div>
+              <label for="customerNote" class="block mb-2 font-medium"
+                >Ghi chú</label
+              >
+              <textarea
+                id="customerNote"
+                rows="3"
+                class="px-4 py-3 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500 w-full"
+                placeholder="Ghi chú cho đơn hàng (không bắt buộc)"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="bg-blue-600 hover:bg-blue-700 py-3 rounded-lg w-full font-semibold text-white transition"
+            >
+              Xác nhận đặt hàng
+            </button>
+          </form>
+        </section>
+
+        <aside class="bg-white shadow-sm p-6 rounded-xl h-fit">
+          <h3 class="mb-5 font-bold text-xl">Đơn hàng của bạn</h3>
+
+          <div id="checkoutItems" class="space-y-4"></div>
+
+          <div id="emptyCheckout" class="hidden py-6 text-center">
+            <p class="text-gray-500">Giỏ hàng đang trống.</p>
+            <a href="./cart.html" class="text-blue-600 hover:underline"
+              >Quay lại mua hàng</a
+            >
+          </div>
+
+          <div class="mt-5 pt-5 border-t">
+            <div class="flex justify-between font-semibold">
+              <span>Tổng tiền:</span>
+              <span id="checkoutTotal" class="text-blue-600 text-xl">0 ₫</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div
+        id="orderSuccess"
+        class="hidden bg-green-100 mt-8 p-5 rounded-xl text-green-700"
+      >
+        <h3 class="font-bold text-lg">Đặt hàng thành công!</h3>
+        <p>Thông tin đơn hàng đã được lưu trên trình duyệt.</p>
+      </div>
+    </main>
+  </body>
+</html>
